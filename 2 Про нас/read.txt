@@ -1,0 +1,4 @@
+
+ Якщо форму надіслано успішно: openSuccessPopup()
+
+ Якщо помилка: блоку openErrorPopup()
