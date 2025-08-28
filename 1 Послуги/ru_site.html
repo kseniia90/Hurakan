@@ -1,0 +1,285 @@
+<style type="text/css">body {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 16px;
+          background: #fff;
+          width: 100%;
+          overflow-x: hidden;
+          margin: 0;
+        }
+        h1,
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        .section-services {
+          width: 100%;
+        }
+        .section-services__container {
+          width: 100%;
+          margin: 0 auto;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .section-services__heading {
+          display: flex;
+          flex-direction: column;
+          grid-column-gap: 32px;
+          grid-row-gap: 32px;
+        }
+        .section-services__heading h1 {
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 20px;
+          color: #000;
+          text-align: center;
+        }
+        .section-services__heading p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          color: #000;
+          text-align: center;
+          margin-top: 46px !important;
+        }
+        .section-services__subheading {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          color: #000;
+          text-align: center;
+          margin-top: 46px !important;
+          margin-bottom: 46px !important;
+        }
+        .services-block {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 335px;
+          width: 100%;
+          height: 400px;
+          background: #f7f7f7;
+          border-radius: 8px;
+          padding: 24px;
+        }
+        .services-block.services-block--title h5 {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 26px;
+          color: #058b8c;
+          margin: 0;
+          text-align: center;
+        }
+        .services-block.services-block--title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+        }
+        .services-block.services-block--title span {
+          color: #058b8c;
+          text-align: center;
+        }
+        .services-block.services-block--text {
+          display: flex;
+          flex-direction: column;
+          grid-column-gap: 8px;
+          grid-row-gap: 8px;
+        }
+        .services-block.services-block--text p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          color: #000;
+        }
+        .services-block--color span {
+          color: #f7f7f7;
+          opacity: 0;
+        }
+        .services-block.services-block--text p > span {
+          font-weight: 600;
+        }
+        .services-block.services-block--color.block-photo {
+          background: #f7f7f7;
+          padding: 0;
+height: 448px;
+        }
+        .services-block.services-block--color.block-photo img {
+          
+          height: 100%;
+        }
+        .services-block.services-block--color.block-photo.block-thr img {
+          position: absolute;
+        }
+        .services-block.services-block--color.block-photo.block-thr {
+          position: relative;
+        }
+        
+        .img-1 {
+     width: 180px;
+    left: -43px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.img-2 {
+width: 237px;
+    left: 190px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.img-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    left: 15px;
+}
+        .section-services__blocks {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          grid-column-gap: 10px;
+          grid-row-gap: 18px;
+        }
+        .block-photo-all {
+          background-image: url("/content/uploads/images/s4.png");
+          background-size: cover;
+        }
+        .block-photo-proj {
+          background-image: url("/content/uploads/images/s5.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .block-photo-serv {
+          background-image: url("/content/uploads/images/s7.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .block-photo-rent {
+          background-image: url("/content/uploads/images/s8.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .block-photo-mon {
+          position: relative;
+          overflow: hidden;
+        }
+        .block-photo-mon::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-image: url("/content/uploads/images/s6.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          max-width: 260px;
+          transform: rotate(90deg);
+          transform-origin: center;
+        }
+        @media (max-width: 1370px) {
+          .services-block.services-block--color {
+            display: none;
+          }
+          .section-services__blocks {
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+        @media (max-width: 1060px) {
+          .services-block.services-block--title {
+            max-width: 100%;
+            height: 110px;
+          }
+          .services-block.services-block--text {
+            max-width: 100%;
+            height: 420px;
+          }
+        }
+</style>
+<div class="section-services">
+<div class="section-services__container">
+<div class="section-services__heading">
+<p>Специалисты Hurakan предоставляют решения для заведений общественного питания, ритейла и индустрии гостеприимства &ndash; от проектирования до сервиса и обслуживания. Работаем с объектами любой сложности, создаем вместе эффективное пространство.</p>
+</div>
+
+<p class="section-services__subheading" style="text-align: left;">Hurakan имеет представительства в большинстве регионов Украины (действующие: Винница, Днепр, Запорожье, Ивано-Франковск, Кривой Рог, Кропивницкий, Луцк, Львов, Мукачево, Николаев, Одесса, Полтава, Ровно, Сумы, Тернополь, Ужгород, Харьков, Черкассы, Чернигов, Черновцы).</p>
+
+<div class="section-services__blocks">
+<div class="services-block services-block--title">
+<h5>Продажа</h5>
+</div>
+
+<div class="services-block services-block--text">
+<p>Мы реализуем профессиональное кухонное оборудование для ресторанов, кафе, баров, фастфуда, мобильных и полевых кухонь, гостинично-ресторанного бизнеса, небольших кондитерских и пекарен, складских и производственных помещений, мясных, рыбных и других отделов в магазинах и супермаркетах. В ассортименте исключительно профессиональная техника, проверенная в условиях интенсивной эксплуатации.</p>
+</div>
+
+<div class="services-block services-block--color block-photo block-thr"><img alt="services-img" class="img-1" loading="lazy" src="/content/uploads/images/s1.png" /> <img alt="services-img" class="img-2" loading="lazy" src="/content/uploads/images/s2.png" /> <img alt="services-img" class="img-3" loading="lazy" src="/content/uploads/images/s3.png" /></div>
+
+<div class="services-block services-block--color block-photo-all"><span>1</span></div>
+
+<div class="services-block services-block--title">
+<h5>Доставка</h5>
+</div>
+
+<div class="services-block services-block--text">
+<p>Осуществляем своевременную доставку по всей Украине (кроме ТОТ). Доставка осуществляется в течение 1-3 рабочих дней почтовой службой Новая Почта (по тарифам перевозчика) или самовывозом со склада или шоу-рума в Киеве. Упаковка и маркировка осуществляется в соответствии с типом оборудования.</p>
+
+<p>Самое популярное среди украинских рестораторов оборудование всегда в складских запасах (имеем склад 2 300 м&sup2; в области и выставочный зал (шоу-рум) 1000 м&sup2; в Киеве).</p>
+
+<p>Все оборудование соответствует международным стандартам качества и безопасности: ISO.</p>
+</div>
+
+<div class="services-block services-block--title">
+<h5>Проектирование</h5>
+</div>
+
+<div class="services-block services-block--color block-photo-proj"><span>1</span></div>
+
+<div class="services-block services-block--text">
+<p>Создаем вместе безопасную эффективную кухню, соответствующую требованиям HACCP<br />
+<br />
+<span>Услуга включает: </span> работу квалифицированного специалиста, анализ планировки, зонирования, разводки коммуникаций (электропроводки, водопровода, канализации, вентиляции), учет специфики заведения / предприятия, меню, технологий производства, размещения и перемещения персонала, внутреннюю эргономику и логистику, визуализацию в 2D и базовом 3D формате, коммерческое предложение с полным подбором оборудования, спецификациями и сметой</p>
+</div>
+
+<div class="services-block services-block--text">
+<p>Услуга включает: выезд специалиста на объект, монтаж оборудования в соответствии с проектной документацией и инструкциями производителя, подключение к коммуникациям, первичный запуск, настройка параметров, проверка исправности и функциональности, инструктаж персонала по основам эксплуатации.</p>
+</div>
+
+<div class="services-block services-block--title">
+<h5>Монтаж</h5>
+<span>[ пуско-наладочные работы ]</span></div>
+
+<div class="services-block services-block--color block-photo-mon"><span>1</span></div>
+
+<div class="services-block services-block--color block-photo-serv"><span>1</span></div>
+
+<div class="services-block services-block--text">
+<p>Мы предоставляем гарантию 12/18 месяцев в зависимости от типа оборудования (подробнее на странице Гарантия), которая начинает действовать с момента передачи оборудования покупателю и подтверждается документально.<br />
+<br />
+Сервис включает: гарантийное и послегарантийное обслуживание, диагностику, ремонт, замену и подбор запчастей, выезд специалистов на объект или ремонт в нашем сервисном центре в Киеве или в сети партнеров в регионах (представлены в Виннице, Днепре, Запорожье, Ивано-Франковске, Кривом Роге, Кропивницком, Луцке, Львове, Мукачево, Николаеве, Одессе, Полтаве, Ровно, Сумах, Тернополе, Ужгороде, Харькове, Черкассах, Чернигове, Черновцах).</p>
+</div>
+
+<div class="services-block services-block--title">
+<h5>Сервис</h5>
+</div>
+
+<div class="services-block services-block--text">
+<p>Вы можете организовывать профессиональные мероприятия (мастер-классы, кулинарные курсы), проводить тест-драйв оборудования и проработки рецептов, делать профессиональную съемку для YouTube, Instagram и других соцсетей. Наше помещение вмещает до 30 гостей, оно полностью оборудовано профобладнанием и всем необходимым инвентарем, также имеем и предлагаем в пользование профессиональный экран для трансляции в режиме реального времени с возможностью записи, укрытие находится на -1 этаже, есть возможность подключения к сети Старлинк.<br />
+Свяжитесь с нами: телефон: +38 066 88 24 688 E-mail: info@hurakan.ua график работы:</p>
+</div>
+
+<div class="services-block services-block--title">
+<h5>Аренда кулинарного хаба</h5>
+<span>[ центра для мастер-классов ]</span></div>
+
+<div class="services-block services-block--color block-photo-rent"><span>1</span></div>
+</div>
+</div>
+</div>

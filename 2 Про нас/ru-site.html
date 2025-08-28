@@ -1,0 +1,210 @@
+<style type="text/css">
+    body {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        background: #fff;
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    h1,
+    h5,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section-about__container {
+        max-width: 1460px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .section-about__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+        margin-top: 80px;
+        margin-bottom: 46px;
+    }
+
+    .section-about__heading h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #000;
+        text-align: center;
+    }
+
+    .section-about__heading p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #000;
+        text-align: center;
+    }
+
+    .section-about__heading p>span {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        color: #058b8c;
+    }
+
+    .section-about__heading--text {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        color: #000;
+        text-align: center;
+    }
+
+    .heading--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+    }
+
+    .section-about__why h5 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #000;
+        text-align: center;
+        margin-bottom: 80px;
+        margin-top: 46px;
+    }
+
+    .section-about__why h5>span {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #058B8C;
+    }
+
+    .section-about__why__content {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-content: space-between;
+        grid-column-gap: 40px;
+        grid-row-gap: 80px;
+        margin-bottom: 92px;
+    }
+
+    @media(max-width: 1200px) {
+        .section-about__why__content {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media(max-width: 1000px) {
+        .section-about__why__content {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+    }
+
+    .why-block {
+        display: flex;
+        align-items: center;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        max-width: 452px;
+    }
+
+    .why-block span {
+        display: block;
+        width: 68px;
+        height: 68px;
+        color: #D9D9D9;
+        background: #D9D9D9;
+        flex-shrink: 0;
+    }
+
+    .why-block p {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #000;
+    }
+
+    .section-about--text__bottom {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #000;
+        text-align: center;
+        margin-top: 46px;
+        margin-bottom: 46px;
+    }
+</style>
+<div class="section-about">
+    <div class="section-about__container">
+        <div class="section-about__heading">
+            <div class="heading--text">
+                <p><span>Hurakan</span> &ndash; бренд профессионального кухонного оборудования для HoReCa и ритейла.
+                    Вышел на рынок Украины в 2018 году, а сам проект стартовал в 2013-м. Китайский бренд №1 в Украине.
+                    Официальный дистрибьютор &ndash; Новый Проект. Мы предоставляем хорошее качество по
+                    конкурентоспособной цене, постоянно совершенствуем и расширяем ассортимент товаров, а также имеем
+                    большую дилерскую сеть в каждой области. Ищете доступное (бюджетное), но качественное? Обращайтесь!
+                </p>
+                <span class="section-about__heading--text">Нужно все и сразу? Ассортимент товаров &ndash; более 300
+                    наименований для любых потребностей! </span>
+            </div>
+        </div>
+
+        <div class="section-about__why">
+            <h5>Почему <span>HURAKAN</span></h5>
+
+            <div class="section-about__why__content">
+                <div class="why-block"><span>1</span>
+
+                    <p>На рынке с 2018 года</p>
+                </div>
+
+                <div class="why-block"><span>1</span>
+
+                    <p>Менее 1% рекламаций</p>
+                </div>
+
+                <div class="why-block"><span>1</span>
+
+                    <p>50+ заводов-производителей в Китае</p>
+                </div>
+
+                <div class="why-block"><span>1</span>
+
+                    <p>Склады в Украине<br />
+                        (основной &ndash; 2 300 м&sup2;, шоу-рум &ndash; 1 000 м&sup2;)</p>
+                </div>
+
+                <div class="why-block"><span>1</span>
+
+                    <p>1 000+ реализованных проектов</p>
+                </div>
+
+                <div class="why-block"><span>1</span>
+
+                    <p>Дилеры в 20+ регионах</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="section-about--text__bottom">Hurakan имеет представительства в большинстве регионов Украины
+            (действующие: Винница, Днепр, Запорожье, Ивано-Франковск, Кривой Рог, Кропивницкий, Луцк, Львов, Мукачево,
+            Николаев, Одесса, Полтава, Ровно, Сумы, Тернополь, Ужгород, Харьков, Черкассы, Чернигов, Черновцы).</p>
+    </div>
+</div>
+<!-- Elfsight Form Builder | Про нас RU -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+<div class="elfsight-app-8ae17229-afae-428f-9cb6-37a15f8e16e8" data-elfsight-app-lazy="">&nbsp;</div>

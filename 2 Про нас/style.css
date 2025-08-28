@@ -326,13 +326,17 @@ button.hrk__button:hover {
     padding-bottom: 96px;
 }
 
-.form-block-hrk .hrk-subtitle>p {
+.form-block-hrk .hrk-subtitle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-block-hrk .hrk-subtitle>span {
     font-weight: 700;
 }
 
-.form-block-hrk .hrk-subtitle>p:last-child {
-    margin-bottom: 16px !important;
-}
+
 
 .form-block-hrk .hrk-blue-text {
     font-size: 20px !important;
