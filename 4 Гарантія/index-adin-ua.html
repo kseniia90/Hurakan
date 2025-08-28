@@ -16,7 +16,6 @@
     .wrapper,
     .layout-wrap {
         padding: 0 !important;
-        max-width: 100% !important;
     }
 
     .main {
@@ -28,7 +27,8 @@
     }
 
     .breadcrumbs,
-    .footer__container {
+    .footer__container,
+    .panel__content {
         padding-left: 20px;
         padding-right: 20px;
         max-width: 1240px;
@@ -768,15 +768,38 @@
                         <h3 class="hrk-form__subtitle margin_24">Адреса:</h3>
 
                         <div class="hrk-form__inputs"><input name="user_index" placeholder="Поштовий індекс"
-                                type="number" /> <select id="" name="user_region">
-                                <option disabled="disabled" selected="selected" value="">Область</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                            </select> <select id="" name="user_region">
-                                <option disabled="disabled" selected="selected" value="">Місто</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                            </select> <input name="user_address" placeholder="Вулиця, будинок" type="text" /></div>
+                                type="number" />
+                            <select id="" name="user_region">
+                                <option disabled="disabled" selected="selected" value="def">Область</option>
+                                <option value="vinnitska">Вінницька</option>
+                                <option value="volynska">Волинська</option>
+                                <option value="dnipropetrovska">Дніпропетровська</option>
+                                <option value="donetska">Донецька</option>
+                                <option value="zhytomyrska">Житомирська</option>
+                                <option value="zakarpatska">Закарпатська</option>
+                                <option value="zaporizka">Запорізька</option>
+                                <option value="ivano-frankivska">Івано-Франківська</option>
+                                <option value="kyivska">Київська</option>
+                                <option value="kirovohradska">Кіровоградська</option>
+                                <option value="luhanska">Луганська</option>
+                                <option value="lvivska">Львівська</option>
+                                <option value="mykolaivska">Миколаївська</option>
+                                <option value="odeska">Одеська</option>
+                                <option value="poltavska">Полтавська</option>
+                                <option value="rivnenska">Рівненська</option>
+                                <option value="sumska">Сумська</option>
+                                <option value="ternopilska">Тернопільська</option>
+                                <option value="kharkivska">Харківська</option>
+                                <option value="khersonska">Херсонська</option>
+                                <option value="khmelnytska">Хмельницька</option>
+                                <option value="cherkaska">Черкаська</option>
+                                <option value="chernivetska">Чернівецька</option>
+                                <option value="chernihivska">Чернігівська</option>                            
+                            </select>
+                         
+                            <input name="user_city" placeholder="Місто" type="text" /> <input name="user_address"
+                                placeholder="Вулиця, будинок" type="text" />
+                        </div>
                     </div>
 
                     <div class="hrk-form__block">
