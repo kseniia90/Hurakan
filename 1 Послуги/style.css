@@ -213,6 +213,10 @@ button.hrk__button:hover {
     gap: 6%;
 }
 
+.services-list__item.item-6-hrk {
+    background: rgba(0, 0, 0, 0.03);;
+}
+
 .services-list__item.item-3-hrk .services-list__content{
     max-width: 1200px;
 }
