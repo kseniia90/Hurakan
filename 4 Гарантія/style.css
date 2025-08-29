@@ -117,7 +117,11 @@ button.hrk__button:hover {
 }
 
 .hrk-blue-text {
-    color: var(--accent);
+    color: var(--accent) !important;
+}
+
+.hrk-form__light {
+    color: #00000080 !important;
 }
 
 .margin_32 {
