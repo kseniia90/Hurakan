@@ -1,5 +1,4 @@
-<style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+<style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
     * {
         scroll-behavior: smooth;
@@ -13,10 +12,11 @@
         display: none;
     }
 
-    .wrapper,
+ .wrapper,
     .layout-wrap {
         padding: 0 !important;
     }
+
 
     .main {
         overflow-x: hidden;
@@ -26,9 +26,9 @@
         margin: 0;
     }
 
-    .breadcrumbs,
+.breadcrumbs,
     .footer__container,
-    .panel__content {
+.panel__content {
         padding-left: 20px;
         padding-right: 20px;
         max-width: 1240px;
@@ -150,6 +150,10 @@
         color: var(--accent) !important;
     }
 
+.hrk-form__light {
+    color: #00000080 !important;
+}
+
     .margin_32 {
         margin-bottom: 32px !important;
     }
@@ -168,7 +172,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        margin: 0;
+margin: 0;
     }
 
     .banner-hrk .banner-hrk__img.mobile {
@@ -187,7 +191,7 @@
 
     .text-block-hrk {
         padding-top: 5px;
-        padding-bottom: 96px;
+        padding-bottom: 40px;
     }
 
     .hrk-text {
@@ -227,7 +231,7 @@
         max-width: 350px;
         height: 49px;
         padding: 16px 40px;
-        font-size: 14px !important;
+font-size: 14px !important;
         color: rgba(0, 0, 0, 0.5);
         border: none;
         outline: none;
@@ -285,7 +289,7 @@
     }
 
     .checkbox-hrk {
-        width: 20px;
+width: 20px;
         opacity: 0;
         position: absolute;
     }
@@ -341,8 +345,8 @@
         gap: 24px;
         padding: 40px;
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23333' stroke-width='1' stroke-dasharray='25' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+background-color: #ffffff80;
         border-radius: 20px;
-        background-color: #ffffff80;
     }
 
     #fileInput {
@@ -376,6 +380,21 @@
     .guarantee-form .error.state-visible {
         display: block;
     }
+
+
+.file-list {
+  margin: 20px 0 !important;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  column-gap: 30px;
+  row-gap: 15px;
+}
+
+ .file-list li::before {
+    display: none;
+}
 
     .guarantee-rules__wrapper {
         padding-bottom: 96px;
@@ -454,7 +473,7 @@
 
     .guarantee-download__btn {
         display: flex;
-        justify-content: center;
+justify-content: center;
         align-items: center;
         gap: 12px;
     }
@@ -515,7 +534,7 @@
         }
 
         .text-block-hrk {
-            padding-bottom: 88px;
+            padding-bottom: 24px;
         }
 
         .hrk-text {
@@ -549,12 +568,11 @@
         .form-block-hrk .hrk-form select,
         .form-block-hrk .hrk-form textarea {
             max-width: 100%;
-            min-width: auto;
-            font-size: 12px !important;
+min-width: auto;
+font-size: 12px !important;
             padding: 16px 32px;
         }
-
-        .form-block-hrk .hrk-form .hrk-form__inputs>input[name="company_name"] {
+ .form-block-hrk .hrk-form .hrk-form__inputs>input[name="company_name"] {
             height: 55px;
         }
 
@@ -741,422 +759,333 @@
     /*popup end*/
 </style>
 <main>
-    <div class="guarantee-page wrapper-hrk"><!-- Text block -->
-        <div class="text-block-hrk container-hrk">
-            <h1 class="hrk-title margin_32">Гарантія</h1>
+<div class="guarantee-page wrapper-hrk"><!-- Text block -->
+<div class="text-block-hrk container-hrk">
+<h1 class="hrk-title margin_32">Гарантія</h1>
 
-            <div class="hrk-text">
-                <p>Поширюється на нове обладнання, покриває заводські дефекти протягом гарантійного терміну</p>
-            </div>
-        </div>
-        <!-- banner block -->
+<div class="hrk-text">
+<p>Поширюється на нове обладнання, покриває заводські дефекти протягом гарантійного терміну</p>
+</div>
+</div>
+<!-- banner block -->
 
-        <div class="banner-hrk"><img alt="banner" class="banner-hrk__img desktop" loading="lazy"
-                src="/content/uploads/images/guarantee_banner_1_ua.jpg" /> <img alt="banner"
-                class="banner-hrk__img mobile" loading="lazy"
-                src="/content/uploads/images/guarantee_banner_1_ua_mob.jpg" /> <img alt="banner"
-                class="banner-hrk__img desktop" loading="lazy"
-                src="/content/uploads/images/guarantee_banner_2_ua.jpg" /> <img alt="banner"
-                class="banner-hrk__img mobile" loading="lazy"
-                src="/content/uploads/images/guarantee_banner_2_ua_mob.jpg" /></div>
-        <!-- Form block -->
+<div class="banner-hrk"><img alt="banner" class="banner-hrk__img desktop" loading="lazy" src="/content/uploads/images/guarantee_banner_1_ua.jpg" /> <img alt="banner" class="banner-hrk__img mobile" loading="lazy" src="/content/uploads/images/guarantee_banner_1_ua_mob.jpg" /> <img alt="banner" class="banner-hrk__img desktop" loading="lazy" src="/content/uploads/images/guarantee_banner_2_ua.jpg" /> <img alt="banner" class="banner-hrk__img mobile" loading="lazy" src="/content/uploads/images/guarantee_banner_2_ua_mob.jpg" /></div>
+<!-- Form block -->
 
-        <div class="form-block-hrk guarantee-form">
-            <div class="form-block-hrk__wrapper container-hrk">
-                <h2 class="hrk-subtitle">Форма зв&#39;язку</h2>
+<div class="form-block-hrk guarantee-form">
+<div class="form-block-hrk__wrapper container-hrk">
+<h2 class="hrk-subtitle">Форма зв&#39;язку</h2>
 
-                <form action="" class="hrk-form fotm_harantiia">
-                    <div class="hrk-form__block">
-                        <h3 class="hrk-form__subtitle margin_24">Контактна інформація:</h3>
+<form action="" class="hrk-form form_send_file">
+<div class="hrk-form__block">
+<h3 class="hrk-form__subtitle margin_24">Контактна інформація:</h3>
 
-                        <div class="hrk-form__inputs"><input name="user_name" placeholder="ПІБ" type="text" /> <input
-                                name="user_phone" type="tel" value="+ 380" /> <input name="user_email"
-                                placeholder="E-mail" type="email" /> <input name="product_name"
-                                placeholder="Найменування товару" type="text" /> <input name="product_serial"
-                                placeholder="Серійний номер *" type="text" /> <input class="input_full"
-                                name="company_name"
-                                placeholder="Назва компанії у якої було придбане обладнання (ФОП, ТОВ)" type="text" />
-                        </div>
-                    </div>
+<div class="hrk-form__inputs"><input name="user_name" placeholder="ПІБ" type="text" /> <input name="user_phone" type="tel" value="+ 380" /> <input name="user_email" placeholder="E-mail" type="email" /> <input name="product_name" placeholder="Найменування товару" type="text" /> <input name="product_serial" placeholder="Серійний номер *" type="text" /> <input class="input_full" name="company_name" placeholder="Назва компанії у якої було придбане обладнання (ФОП, ТОВ)" type="text" /></div>
+</div>
 
-                    <div class="hrk-form__block">
-                        <h3 class="hrk-form__subtitle margin_24">Адреса:</h3>
+<div class="hrk-form__block">
+<h3 class="hrk-form__subtitle margin_24">Адреса:</h3>
 
-                        <div class="hrk-form__inputs"><input name="user_index" placeholder="Поштовий індекс"
-                                type="number" />
-                            <select id="" name="user_region">
-                                <option disabled="disabled" selected="selected" value="def">Область</option>
-                                <option value="vinnitska">Вінницька</option>
-                                <option value="volynska">Волинська</option>
-                                <option value="dnipropetrovska">Дніпропетровська</option>
-                                <option value="donetska">Донецька</option>
-                                <option value="zhytomyrska">Житомирська</option>
-                                <option value="zakarpatska">Закарпатська</option>
-                                <option value="zaporizka">Запорізька</option>
-                                <option value="ivano-frankivska">Івано-Франківська</option>
-                                <option value="kyivska">Київська</option>
-                                <option value="kirovohradska">Кіровоградська</option>
-                                <option value="luhanska">Луганська</option>
-                                <option value="lvivska">Львівська</option>
-                                <option value="mykolaivska">Миколаївська</option>
-                                <option value="odeska">Одеська</option>
-                                <option value="poltavska">Полтавська</option>
-                                <option value="rivnenska">Рівненська</option>
-                                <option value="sumska">Сумська</option>
-                                <option value="ternopilska">Тернопільська</option>
-                                <option value="kharkivska">Харківська</option>
-                                <option value="khersonska">Херсонська</option>
-                                <option value="khmelnytska">Хмельницька</option>
-                                <option value="cherkaska">Черкаська</option>
-                                <option value="chernivetska">Чернівецька</option>
-                                <option value="chernihivska">Чернігівська</option>                            
-                            </select>
-                         
-                            <input name="user_city" placeholder="Місто" type="text" /> <input name="user_address"
-                                placeholder="Вулиця, будинок" type="text" />
-                        </div>
-                    </div>
+<div class="hrk-form__inputs"><input name="user_index" placeholder="Поштовий індекс" type="number" /> <select id="" name="user_region"><option disabled="disabled" selected="selected" value="def">Область</option><option value="vinnitska">Вінницька</option><option value="volynska">Волинська</option><option value="dnipropetrovska">Дніпропетровська</option><option value="donetska">Донецька</option><option value="zhytomyrska">Житомирська</option><option value="zakarpatska">Закарпатська</option><option value="zaporizka">Запорізька</option><option value="ivano-frankivska">Івано-Франківська</option><option value="kyivska">Київська</option><option value="kirovohradska">Кіровоградська</option><option value="luhanska">Луганська</option><option value="lvivska">Львівська</option><option value="mykolaivska">Миколаївська</option><option value="odeska">Одеська</option><option value="poltavska">Полтавська</option><option value="rivnenska">Рівненська</option><option value="sumska">Сумська</option><option value="ternopilska">Тернопільська</option><option value="kharkivska">Харківська</option><option value="khersonska">Херсонська</option><option value="khmelnytska">Хмельницька</option><option value="cherkaska">Черкаська</option><option value="chernivetska">Чернівецька</option><option value="chernihivska">Чернігівська</option> </select> <input name="user_city" placeholder="Населений пункт" type="text" /> <input name="user_address" placeholder="Вулиця, будинок, квартира, офіс" type="text" /></div>
+</div>
 
-                    <div class="hrk-form__block">
-                        <h3 class="hrk-form__subtitle margin_24">Причина звернення</h3>
+<div class="hrk-form__block">
+<h3 class="hrk-form__subtitle margin_24">Причина звернення</h3>
 
-                        <div class="hrk-form__checkbox-list">
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_1"
-                                        name="reason_1" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_1">Недокомплектація</label></div>
-                            </div>
+<div class="hrk-form__checkbox-list">
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_1" name="reason_1" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_1">Недокомплектація</label></div>
+</div>
 
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_2"
-                                        name="reason_2" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_2">Технічна несправність</label></div>
-                            </div>
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_2" name="reason_2" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_2">Технічна несправність</label></div>
+</div>
 
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_3"
-                                        name="reason_3" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_3">Механічне пошкодження</label></div>
-                            </div>
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_3" name="reason_3" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_3">Механічне пошкодження</label></div>
+</div>
 
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_4"
-                                        name="reason_4" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_4">Візуальний дефект</label></div>
-                            </div>
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_4" name="reason_4" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_4">Візуальний дефект</label></div>
+</div>
 
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_5"
-                                        name="reason_5" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_5">Проблеми з дверцятами</label></div>
-                            </div>
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_5" name="reason_5" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_5">Проблеми з дверцятами</label></div>
+</div>
 
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_6"
-                                        name="reason_6" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_6">Вибивиє помилку</label></div>
-                            </div>
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_6" name="reason_6" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_6">Вибивиє помилку</label></div>
+</div>
 
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_7"
-                                        name="reason_7" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_7">Зайвий шум</label></div>
-                            </div>
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_7" name="reason_7" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_7">Зайвий шум</label></div>
+</div>
 
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_8"
-                                        name="reason_8" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_8">Потрібні запчастини</label></div>
-                            </div>
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_8" name="reason_8" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_8">Потрібні запчастини</label></div>
+</div>
 
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_9"
-                                        name="reason_9" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_9">Товар куплений за гарантією</label></div>
-                            </div>
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_9" name="reason_9" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_9">Товар куплений за гарантією</label></div>
+</div>
 
-                            <div class="hrk-form__checkbox-list-item">
-                                <div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_10"
-                                        name="reason_10" type="checkbox" /> <label class="checkbox-hrk-label "
-                                        for="reason_10">Інше</label></div>
-                                <textarea id="" name="reason_text" rows="2" style="height: auto;resize: none;"></textarea>
-                            </div>
-                        </div>
-                    </div>
+<div class="hrk-form__checkbox-list-item">
+<div class="hrk-form__checkbox"><input class="checkbox-hrk" id="reason_10" name="reason_10" type="checkbox" /> <label class="checkbox-hrk-label " for="reason_10">Інше</label></div>
+<textarea id="" name="reason_text" rows="2" style="height: auto;resize: none;"></textarea></div>
+</div>
+</div>
 
-                    <div class="hrk-form__block">
-                        <div class="upload-box" id="uploadBox">
-                            <div class="upload-content">
-                                <div class="upload-icon"><svg class="upload-icon" fill="none" height="60"
-                                        viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M18.6301 37.9106C3.63586 39.5468 5.30189 21.5488 18.6301 23.185C13.632 5.18704 41.9544 5.18704 40.2884 18.2765C56.9486 13.3679 56.9486 39.5468 41.9544 37.9106M21.9621 44.4553L30.2922 51M30.2922 51L38.6223 44.4553M30.2922 51V28.0935"
-                                            stroke="#00000080" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg></div>
+<div class="hrk-form__block">
+<div class="upload-box" id="uploadBox">
+<div class="upload-content">
+<div class="upload-icon"><svg class="upload-icon" fill="none" height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"> <path d="M18.6301 37.9106C3.63586 39.5468 5.30189 21.5488 18.6301 23.185C13.632 5.18704 41.9544 5.18704 40.2884 18.2765C56.9486 13.3679 56.9486 39.5468 41.9544 37.9106M21.9621 44.4553L30.2922 51M30.2922 51L38.6223 44.4553M30.2922 51V28.0935" stroke="#00000080" stroke-linecap="round" stroke-linejoin="round"></path> </svg></div>
 
-                                <div class="upload-text">
-                                    <p class="upload-subtitle"><span>Прикріпити файли **</span><span>png, jpeg, jpg,
-                                            pdf</span></p>
+<div class="upload-text">
+<p class="upload-subtitle"><span>Прикріпити файли **</span><span>png, jpeg, jpg, pdf</span></p>
 
-                                    <p class="error" id="error-invalid-type">Виберіть файл у форматі:<br />
-                                        png, jpeg, jpg, pdf</p>
-                                </div>
-                                <input id="fileInput" multiple="multiple" type="file" />
-                            </div>
-                        </div>
-                    </div>
-                    <button class="hrk__button open-popup_hrk">Надіслати</button>
-                </form>
-            </div>
-        </div>
-        <!-- guarantee rules -->
+<p class="error" id="error-invalid-type">Виберіть файл у форматі:<br />
+png, jpeg, jpg, pdf</p>
+</div>
+<input id="fileInput" multiple="multiple" type="file" /></div>
+<ul id="fileList" class="file-list"></ul>
+</div>
 
-        <div class="guarantee-rules container-hrk">
-            <div class="guarantee-rules__wrapper">
-                <div class="guarantee-rules__item">
-                    <h3 class="guarantee-rules__title">Початок строку гарантії</h3>
+</div>
 
-                    <div class="guarantee-rules__text">
-                        <p>Гарантія починає діяти з моменту передачі обладнання покупцю та підтверджується підписанням
-                            видаткової накладної</p>
-                    </div>
-                </div>
+<div class="hrk-form__block">
+<p class="hrk-form__light">* вказаний на шильді</p>
 
-                <div class="guarantee-rules__item">
-                    <h3 class="guarantee-rules__title">Гарантійне обслуговування</h3>
+<p class="hrk-form__light" style="margin-bottom: 16px;">** 1-3 фото пошкоджень, фото серійного номеру, заповнений акт рекламації</p>
 
-                    <div class="guarantee-rules__text">
-                        <p>Безкоштовний ремонт та обслугування здійснюються в сервісному центрі продавця. Термін ремонту
-                            &ndash; до 14 днів (крім вихідних та державних свят) за наявності запчастин.</p>
+<p>Натискаючи кнопку &quot;Надіслати&quot;, ви надаєте згоду на обробку ваших персональних даних відповідно до Політики конфіденційності.</p>
 
-                        <p>Якщо запчастин немає &ndash; термін продовжується на час доставки з заводу виробника.</p>
-                    </div>
-                </div>
+<p>Ми використовуємо Ваші персональні дані лише для обробки замовлень, комунікації та покращення сервісу та не передається третім особам.</p>
+</div>
+<button class="hrk__button open-popup_hrk">Надіслати</button></form>
+</div>
+</div>
+<!-- guarantee rules -->
 
-                <div class="guarantee-rules__item item-accent">
-                    <h3 class="guarantee-rules__title">Гарантія поширюється&nbsp;✅</h3>
+<div class="guarantee-rules container-hrk">
+<div class="guarantee-rules__wrapper">
+<div class="guarantee-rules__item">
+<h3 class="guarantee-rules__title">Початок строку гарантії</h3>
 
-                    <div class="guarantee-rules__text">
-                        <p>На дефекти, що виникли з вини виробника (матеріал, збірка, конструкція)</p>
-                    </div>
-                </div>
+<div class="guarantee-rules__text">
+<p>Гарантія починає діяти з моменту передачі обладнання покупцю та підтверджується підписанням видаткової накладної</p>
+</div>
+</div>
 
-                <div class="guarantee-rules__item">
-                    <h3 class="guarantee-rules__title">Гарантія не поширюється&nbsp;❌</h3>
+<div class="guarantee-rules__item">
+<h3 class="guarantee-rules__title">Гарантійне обслуговування</h3>
 
-                    <div class="guarantee-rules__text">
-                        <p>1. Витратні матеріали та швидкозношувані деталі: ущільнювачі, лампи (ІЧ, LED), запобіжники,
-                            полички, дека, ручки, скляні елементи, тощо.</p>
+<div class="guarantee-rules__text">
+<p>Безкоштовний ремонт та обслугування здійснюються в сервісному центрі продавця. Термін ремонту &ndash; до 14 днів (крім вихідних та державних свят) за наявності запчастин.</p>
 
-                        <p>2. Неправильну експлуатацію, зберігання, транспортування</p>
+<p>Якщо запчастин немає &ndash; термін продовжується на час доставки з заводу виробника.</p>
+</div>
+</div>
 
-                        <p>3. Механічні пошкодження, завдані сторонніми особами, втручання неуповноважених осіб</p>
+<div class="guarantee-rules__item item-accent">
+<h3 class="guarantee-rules__title">Гарантія поширюється&nbsp;✅</h3>
 
-                        <p>4. Самостійний монтаж, який не відповідає інструкціїр</p>
+<div class="guarantee-rules__text">
+<p>На дефекти, що виникли з вини виробника (матеріал, збірка, конструкція)</p>
+</div>
+</div>
 
-                        <p>5. Відсутність документів або стертий / змінений серійний номер</p>
-                    </div>
-                </div>
+<div class="guarantee-rules__item">
+<h3 class="guarantee-rules__title">Гарантія не поширюється&nbsp;❌</h3>
 
-                <div class="guarantee-rules__item">
-                    <h3 class="guarantee-rules__title">Документи для звернення</h3>
+<div class="guarantee-rules__text">
+<p>1. Витратні матеріали та швидкозношувані деталі: ущільнювачі, лампи (ІЧ, LED), запобіжники, полички, дека, ручки, скляні елементи, тощо.</p>
 
-                    <div class="guarantee-rules__text guarantee-rules__list">
-                        <p>Фото паспортної таблички (шильда)</p>
+<p>2. Неправильну експлуатацію, зберігання, транспортування</p>
 
-                        <p>Фотофіксація несправності</p>
+<p>3. Механічні пошкодження, завдані сторонніми особами, втручання неуповноважених осіб</p>
 
-                        <p>Акт-рекламація</p>
+<p>4. Самостійний монтаж, який не відповідає інструкціїр</p>
 
-                        <p>Документи, що підтверджують купівлю</p>
-                    </div>
-                </div>
+<p>5. Відсутність документів або стертий / змінений серійний номер</p>
+</div>
+</div>
 
-                <div class="guarantee-rules__item">
-                    <h3 class="guarantee-rules__title">Захист права</h3>
+<div class="guarantee-rules__item">
+<h3 class="guarantee-rules__title">Документи для звернення</h3>
 
-                    <div class="guarantee-rules__text">
-                        <p>Гарантійні зобов&rsquo;язання здійснюютьсявідповідно до: <a class="hrk-blue-text"
-                                href="https://zakon.rada.gov.ua/laws/show/1023-12#Text" target="_blank">Закону України
-                                &laquo;Про захист прав споживачів&raquo;</a>, <a class="hrk-blue-text"
-                                href="https://zakon.rada.gov.ua/laws/show/435-15#Text" target="_blank">Цивільного
-                                кодексу України</a>, <a class="hrk-blue-text"
-                                href="https://zakon.rada.gov.ua/laws/show/436-15#Text" target="_blank">Господарського
-                                кодексу України</a> (для B2B)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Download files -->
+<div class="guarantee-rules__text guarantee-rules__list">
+<p>Фото паспортної таблички (шильда)</p>
 
-        <div class="guarantee-download container-hrk">
-            <div class="guarantee-download__list margin_32">
-                <div class="guarantee-download__item">
-                    <h2 class="guarantee-download__title">Форма акту рекламації *</h2>
-                    <a class="hrk__button guarantee-download__btn" href="/files/myfile.pdf" target="_blank"><svg
-                            fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 15.2379V3.21289" stroke="white" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5"></path>
-                            <path
-                                d="M7.375 10.9939L11.341 14.9599C11.5164 15.1335 11.7532 15.2308 12 15.2308C12.2468 15.2308 12.4836 15.1335 12.659 14.9599L16.625 10.9939"
-                                stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                            <path
-                                d="M2.75 13.8499V18.4749C2.75 19.0883 2.99369 19.6766 3.42746 20.1104C3.86123 20.5442 4.44955 20.7879 5.063 20.7879H18.937C19.5504 20.7879 20.1388 20.5442 20.5725 20.1104C21.0063 19.6766 21.25 19.0883 21.25 18.4749V13.8499"
-                                stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                        </svg> <span>Завантажити</span> </a>
+<p>Фотофіксація несправності</p>
 
-                    <p class="guarantee-download__text">* обов&#39;язкова до заповнення</p>
-                </div>
+<p>Акт-рекламація</p>
 
-                <div class="guarantee-download__item">
-                    <h2 class="guarantee-download__title">Гарантійні зобовʼязання</h2>
-                    <a class="hrk__button guarantee-download__btn" href="/files/myfile.pdf" target="_blank"><svg
-                            fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 15.2379V3.21289" stroke="white" stroke-linecap="round" stroke-miterlimit="10"
-                                stroke-width="1.5"></path>
-                            <path
-                                d="M7.375 10.9939L11.341 14.9599C11.5164 15.1335 11.7532 15.2308 12 15.2308C12.2468 15.2308 12.4836 15.1335 12.659 14.9599L16.625 10.9939"
-                                stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                            <path
-                                d="M2.75 13.8499V18.4749C2.75 19.0883 2.99369 19.6766 3.42746 20.1104C3.86123 20.5442 4.44955 20.7879 5.063 20.7879H18.937C19.5504 20.7879 20.1388 20.5442 20.5725 20.1104C21.0063 19.6766 21.25 19.0883 21.25 18.4749V13.8499"
-                                stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
-                        </svg> <span>Завантажити</span> </a>
-                </div>
-            </div>
-        </div>
-        <!-- Thanks popup -->
+<p>Документи, що підтверджують купівлю</p>
+</div>
+</div>
 
-        <div class="hrk-popup-thanks success">
-            <div class="hrk-popup-dialog">
-                <div class="hrk-popup-content">
-                    <div class="hrk-popup-body">
-                        <div class="hrk-popup__title"><svg fill="none" height="55" viewbox="0 0 60 55" width="60"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 35.933L24.5816 42L47 12" stroke="#28C20C" stroke-linecap="round"
-                                    stroke-width="2"></path>
-                            </svg>
+<div class="guarantee-rules__item">
+<h3 class="guarantee-rules__title">Захист права</h3>
 
-                            <h2 class="hrk-subtitle">Дякуємо!</h2>
-                        </div>
+<div class="guarantee-rules__text">
+<p>Гарантійні зобов&rsquo;язання здійснюютьсявідповідно до: <a class="hrk-blue-text" href="https://zakon.rada.gov.ua/laws/show/1023-12#Text" target="_blank">Закону України &laquo;Про захист прав споживачів&raquo;</a>, <a class="hrk-blue-text" href="https://zakon.rada.gov.ua/laws/show/435-15#Text" target="_blank">Цивільного кодексу України</a>, <a class="hrk-blue-text" href="https://zakon.rada.gov.ua/laws/show/436-15#Text" target="_blank">Господарського кодексу України</a> (для B2B)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Download files -->
 
-                        <p>Ваші дані успішно надіслані. Ми звʼяжемось з вами найближчим часом</p>
+<div class="guarantee-download container-hrk">
+<div class="guarantee-download__list margin_32">
+<div class="guarantee-download__item">
+<h2 class="guarantee-download__title">Форма акту рекламації *</h2>
+<a class="hrk__button guarantee-download__btn" href="https://np.com.ua/%D0%90%D0%BA%D1%82%20%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0%D1%86%D1%96%D1%97.pdf" target="_blank"><svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"> <path d="M12 15.2379V3.21289" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"></path> <path d="M7.375 10.9939L11.341 14.9599C11.5164 15.1335 11.7532 15.2308 12 15.2308C12.2468 15.2308 12.4836 15.1335 12.659 14.9599L16.625 10.9939" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path> <path d="M2.75 13.8499V18.4749C2.75 19.0883 2.99369 19.6766 3.42746 20.1104C3.86123 20.5442 4.44955 20.7879 5.063 20.7879H18.937C19.5504 20.7879 20.1388 20.5442 20.5725 20.1104C21.0063 19.6766 21.25 19.0883 21.25 18.4749V13.8499" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path> </svg> <span>Завантажити</span> </a>
 
-                        <div class="hrk-popup__close-thanks"><button class="hrk__button">Готово</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<p class="guarantee-download__text">* обов&#39;язкова до заповнення</p>
+</div>
 
-        <div class="hrk-popup-thanks error">
-            <div class="hrk-popup-dialog">
-                <div class="hrk-popup-content">
-                    <div class="hrk-popup-body">
-                        <div class="hrk-popup__title"><svg fill="none" height="60" viewbox="0 0 60 60" width="60"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M30 31.7701L16.885 44.8851C16.6517 45.1184 16.365 45.2434 16.025 45.2601C15.685 45.2768 15.3817 45.1518 15.115 44.8851C14.8483 44.6184 14.715 44.3234 14.715 44.0001C14.715 43.6768 14.8483 43.3818 15.115 43.1151L28.23 30.0001L15.115 16.8851C14.8817 16.6518 14.7567 16.3651 14.74 16.0251C14.7233 15.6851 14.8483 15.3818 15.115 15.1151C15.3817 14.8484 15.6767 14.7151 16 14.7151C16.3233 14.7151 16.6183 14.8484 16.885 15.1151L30 28.2301L43.115 15.1151C43.3483 14.8818 43.6358 14.7568 43.9775 14.7401C44.3158 14.7234 44.6183 14.8484 44.885 15.1151C45.1517 15.3818 45.285 15.6768 45.285 16.0001C45.285 16.3234 45.1517 16.6184 44.885 16.8851L31.77 30.0001L44.885 43.1151C45.1183 43.3484 45.2433 43.6359 45.26 43.9776C45.2767 44.3159 45.1517 44.6184 44.885 44.8851C44.6183 45.1518 44.3233 45.2851 44 45.2851C43.6767 45.2851 43.3817 45.1518 43.115 44.8851L30 31.7701Z"
-                                    fill="#E00004"></path>
-                            </svg>
+<div class="guarantee-download__item">
+<h2 class="guarantee-download__title">Гарантійні зобовʼязання</h2>
+<a class="hrk__button guarantee-download__btn" href="https://np.com.ua/%D0%93%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D1%96%D1%8F%20Hurakan.pdf" target="_blank"><svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"> <path d="M12 15.2379V3.21289" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"></path> <path d="M7.375 10.9939L11.341 14.9599C11.5164 15.1335 11.7532 15.2308 12 15.2308C12.2468 15.2308 12.4836 15.1335 12.659 14.9599L16.625 10.9939" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path> <path d="M2.75 13.8499V18.4749C2.75 19.0883 2.99369 19.6766 3.42746 20.1104C3.86123 20.5442 4.44955 20.7879 5.063 20.7879H18.937C19.5504 20.7879 20.1388 20.5442 20.5725 20.1104C21.0063 19.6766 21.25 19.0883 21.25 18.4749V13.8499" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path> </svg> <span>Завантажити</span> </a></div>
+</div>
+</div>
+<!-- Thanks popup -->
 
-                            <h2 class="hrk-subtitle">Хмм.. Щось пішло не так</h2>
-                        </div>
+<div class="hrk-popup-thanks success">
+<div class="hrk-popup-dialog">
+<div class="hrk-popup-content">
+<div class="hrk-popup-body">
+<div class="hrk-popup__title"><svg fill="none" height="55" viewbox="0 0 60 55" width="60" xmlns="http://www.w3.org/2000/svg"> <path d="M14 35.933L24.5816 42L47 12" stroke="#28C20C" stroke-linecap="round" stroke-width="2"></path> </svg>
 
-                        <p>На жаль, не вдалося надіслати форму. Спробуйте ще раз</p>
+<h2 class="hrk-subtitle">Дякуємо!</h2>
+</div>
 
-                        <div class="hrk-popup__close-thanks"><button class="hrk__button">Спробувати ще раз</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<p>Ваші дані успішно надіслані. Ми звʼяжемось з вами найближчим часом</p>
+
+<div class="hrk-popup__close-thanks"><button class="hrk__button">Готово</button></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="hrk-popup-thanks error">
+<div class="hrk-popup-dialog">
+<div class="hrk-popup-content">
+<div class="hrk-popup-body">
+<div class="hrk-popup__title"><svg fill="none" height="60" viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg"> <path d="M30 31.7701L16.885 44.8851C16.6517 45.1184 16.365 45.2434 16.025 45.2601C15.685 45.2768 15.3817 45.1518 15.115 44.8851C14.8483 44.6184 14.715 44.3234 14.715 44.0001C14.715 43.6768 14.8483 43.3818 15.115 43.1151L28.23 30.0001L15.115 16.8851C14.8817 16.6518 14.7567 16.3651 14.74 16.0251C14.7233 15.6851 14.8483 15.3818 15.115 15.1151C15.3817 14.8484 15.6767 14.7151 16 14.7151C16.3233 14.7151 16.6183 14.8484 16.885 15.1151L30 28.2301L43.115 15.1151C43.3483 14.8818 43.6358 14.7568 43.9775 14.7401C44.3158 14.7234 44.6183 14.8484 44.885 15.1151C45.1517 15.3818 45.285 15.6768 45.285 16.0001C45.285 16.3234 45.1517 16.6184 44.885 16.8851L31.77 30.0001L44.885 43.1151C45.1183 43.3484 45.2433 43.6359 45.26 43.9776C45.2767 44.3159 45.1517 44.6184 44.885 44.8851C44.6183 45.1518 44.3233 45.2851 44 45.2851C43.6767 45.2851 43.3817 45.1518 43.115 44.8851L30 31.7701Z" fill="#E00004"></path> </svg>
+
+<h2 class="hrk-subtitle">Хмм.. Щось пішло не так</h2>
+</div>
+
+<p>На жаль, не вдалося надіслати форму. Спробуйте ще раз</p>
+
+<div class="hrk-popup__close-thanks"><button class="hrk__button">Спробувати ще раз</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </main>
 <script>
-    function openSuccessPopup() {
-        if (document.querySelector(".hrk-popup-thanks.success") !== null) {
-            document.querySelector(".hrk-popup-thanks.success").classList.add("active");
-            document.body.style.overflow = "hidden";
+function openSuccessPopup() {
+  if (document.querySelector(".hrk-popup-thanks.success") !== null) {
+    document.querySelector(".hrk-popup-thanks.success").classList.add("active");
+    document.body.style.overflow = "hidden";
 
-            window.addEventListener("click", function (e) {
-                if (e.target.closest(".success .hrk-popup__close")) {
-                    e.preventDefault();
-                    document.querySelector(".hrk-popup-thanks.success").classList.remove("active");
-                    document.body.style.overflow = "auto";
-                }
-
-                if (document.querySelector(".hrk-popup-thanks.success.active") && !e.target.closest(".success .hrk-popup-content")) {
-                    document.querySelector(".hrk-popup-thanks.success").classList.remove("active");
-                    document.body.style.overflow = "auto";
-                }
-            });
+    window.addEventListener("click", function (e) {
+      if (e.target.closest(".success .hrk-popup__close")) {
+          e.preventDefault();
+          document.querySelector(".hrk-popup-thanks.success").classList.remove("active");
+          document.body.style.overflow = "auto";
         }
-    }
 
-    function openErrorPopup() {
-        if (document.querySelector(".hrk-popup-thanks.error") !== null) {
-            document.querySelector(".hrk-popup-thanks.error").classList.add("active");
-            document.body.style.overflow = "hidden";
-
-            window.addEventListener("click", function (e) {
-                if (e.target.closest(".error .hrk-popup__close")) {
-                    e.preventDefault();
-                    document.querySelector(".hrk-popup-thanks.error").classList.remove("active");
-                    document.body.style.overflow = "auto";
-                }
-
-                if (document.querySelector(".hrk-popup-thanks.error.active") && !e.target.closest(".error .hrk-popup-content")) {
-                    document.querySelector(".hrk-popup-thanks.error").classList.remove("active");
-                    document.body.style.overflow = "auto";
-                }
-            });
-        }
-    }
-
-    if (document.querySelector(".hrk-popup-thanks.success") !== null) {
-
-        document.querySelector(".success .hrk-popup__close-thanks").addEventListener('click', (e) => {
-            e.preventDefault();
-            document.querySelector(".hrk-popup-thanks.success").classList.remove("active");
-            document.body.style.overflow = "auto";
-        })
-    };
-
-    if (document.querySelector(".hrk-popup-thanks.error") !== null) {
-
-        document.querySelector(".error .hrk-popup__close-thanks").addEventListener('click', (e) => {
-            e.preventDefault();
-            document.querySelector(".hrk-popup-thanks.error").classList.remove("active");
-            document.body.style.overflow = "auto";
-        })
-    };
-    // popup end
-
-
-    var VALID_TYPES = ['image/jpg', 'image/jpeg', 'image/png', 'image/gif'];
-
-
-    function validateFile(event) {
-        const input = event.target;
-        if (input.files && input.files.length) {
-            const file = input.files[0];
-            const type = file.type;
-
-            const errorEl = document.getElementById('error-invalid-type');
-
-            if (VALID_TYPES.indexOf(type) < 0) {
-                errorEl.classList.add('state-visible');
-                document.querySelector('.upload-subtitle').style.display = 'none';
-            } else {
-                errorEl.classList.remove('state-visible');
-            }
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const imageInput = document.getElementById('fileInput');
-        if (imageInput) {
-            imageInput.addEventListener('change', validateFile);
+        if ( document.querySelector(".hrk-popup-thanks.success.active") && !e.target.closest(".success .hrk-popup-content")) {
+          document.querySelector(".hrk-popup-thanks.success").classList.remove("active");
+          document.body.style.overflow = "auto";
         }
     });
+  }
+}
+
+function openErrorPopup() {
+  if (document.querySelector(".hrk-popup-thanks.error") !== null) {
+    document.querySelector(".hrk-popup-thanks.error").classList.add("active");
+    document.body.style.overflow = "hidden";
+
+    window.addEventListener("click", function (e) {
+      if (e.target.closest(".error .hrk-popup__close")) {
+          e.preventDefault();
+          document.querySelector(".hrk-popup-thanks.error").classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+
+        if ( document.querySelector(".hrk-popup-thanks.error.active") && !e.target.closest(".error .hrk-popup-content")) {
+          document.querySelector(".hrk-popup-thanks.error").classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+    });
+  }
+}
+
+if (document.querySelector(".hrk-popup-thanks.success") !== null) {
+
+    document.querySelector(".success .hrk-popup__close-thanks").addEventListener('click', (e)=>{
+        e.preventDefault();
+            document.querySelector(".hrk-popup-thanks.success").classList.remove("active");
+            document.body.style.overflow = "auto";
+      })
+};
+
+if (document.querySelector(".hrk-popup-thanks.error") !== null) {
+
+    document.querySelector(".error .hrk-popup__close-thanks").addEventListener('click', (e)=>{
+        e.preventDefault();
+            document.querySelector(".hrk-popup-thanks.error").classList.remove("active");
+            document.body.style.overflow = "auto";
+      })
+};  
+// popup end
+
+
+// File input validation
+
+var VALID_TYPES = ['image/jpg', 'image/jpeg', 'image/png', 'application/pdf'];
+
+function validateFiles(event) {
+  const input = event.target;
+  const errorEl = document.getElementById('error-invalid-type');
+  const fileList = document.getElementById('fileList');
+
+  fileList.innerHTML = ""; // clear previous list
+  let valid = true;
+
+  if (input.files && input.files.length) {
+    [...input.files].forEach(file => {
+      if (!VALID_TYPES.includes(file.type)) {
+        valid = false;
+      }
+    });
+
+    if (!valid) {
+      errorEl.textContent = "Виберіть файл у форматі: png, jpeg, jpg, pdf";
+      errorEl.classList.add('state-visible');
+    } else {
+      errorEl.classList.remove('state-visible');
+      // Show uploaded file names
+      [...input.files].forEach(file => {
+        const li = document.createElement('li');
+        li.textContent = file.name;
+        fileList.appendChild(li);
+      });
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const fileInput = document.getElementById('fileInput');
+  if (fileInput) {
+    fileInput.addEventListener('change', validateFiles);
+  }
+});
 
 </script>

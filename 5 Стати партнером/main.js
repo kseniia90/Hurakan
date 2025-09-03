@@ -71,50 +71,6 @@ if (document.querySelector(".hrk-popup-thanks.error") !== null) {
             document.querySelector(".hrk-popup-thanks.error").classList.remove("active");
             document.body.style.overflow = "auto";
       })
-};  
-// popup end
-
-
-// File input validation
-
-var VALID_TYPES = ['image/jpg', 'image/jpeg', 'image/png', 'application/pdf'];
-
-function validateFiles(event) {
-  const input = event.target;
-  const errorEl = document.getElementById('error-invalid-type');
-  const fileList = document.getElementById('fileList');
-
-  fileList.innerHTML = ""; // clear previous list
-  let valid = true;
-
-  if (input.files && input.files.length) {
-    [...input.files].forEach(file => {
-      if (!VALID_TYPES.includes(file.type)) {
-        valid = false;
-      }
-    });
-
-    if (!valid) {
-      errorEl.textContent = "Виберіть файл у форматі: png, jpeg, jpg, pdf";
-      errorEl.classList.add('state-visible');
-    } else {
-      errorEl.classList.remove('state-visible');
-      // Show uploaded file names
-      [...input.files].forEach(file => {
-        const li = document.createElement('li');
-        li.textContent = file.name;
-        fileList.appendChild(li);
-      });
-    }
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  const fileInput = document.getElementById('fileInput');
-  if (fileInput) {
-    fileInput.addEventListener('change', validateFiles);
-  }
-});
-
-
-
+};
+  
+  // popup end

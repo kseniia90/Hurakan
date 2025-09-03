@@ -345,6 +345,20 @@ button.hrk__button:hover {
   display: block;
 }
 
+.file-list {
+  margin: 20px 0 !important;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  column-gap: 30px;
+  row-gap: 15px;
+}
+
+.file-list li::before {
+    display: none;
+}
+
 .guarantee-rules__wrapper {
     padding-bottom: 96px;
     display: grid;
