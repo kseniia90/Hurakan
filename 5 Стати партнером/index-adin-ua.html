@@ -7,7 +7,6 @@
     }
 
     .layout-aside,
-    .breadcrumbs,
     .main-h,
     .heading.heading--xl,
     .catalog__banners--top {
@@ -17,8 +16,8 @@
     .wrapper,
     .layout-wrap {
         padding: 0 !important;
-        max-width: 100% !important;
     }
+
 
     .main {
         overflow-x: hidden;
@@ -67,8 +66,8 @@
 
     .container-hrk {
         min-height: 100%;
-        max-width: 1240px;
-        padding: 0 20px;
+        max-width: 1230px;
+        padding: 0 15px;
         margin: 0 auto;
         width: 100%;
         font-family: "Montserrat", sans-serif;
@@ -93,10 +92,9 @@
         outline: none;
     }
 
-    .container-hrk a {
+    a {
         color: inherit;
         text-decoration: none;
-        border: none;
     }
 
     .container-hrk ul,
@@ -108,16 +106,15 @@
 
     .hrk-title {
         font-size: 36px !important;
-        line-height: 44px !important;
+        line-height: 44px;
         font-weight: 700;
         color: var(--text-color);
     }
 
     .hrk-subtitle {
         font-size: 28px !important;
-        line-height: 34px !important;
+        line-height: 34px;
         font-weight: 700;
-        text-transform: uppercase;
     }
 
     .hrk__button,
@@ -144,7 +141,7 @@
     }
 
     .hrk-blue-text {
-        color: var(--accent) !important;
+        color: var(--accent);
     }
 
     .margin_32 {
@@ -155,64 +152,13 @@
         margin-bottom: 24px !important;
     }
 
-    .hrk-list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 24px;
-        margin: 0;
+    .we-strive-hrk {
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
-    .hrk-list li {
-        position: relative;
-        display: inline;
-        padding-left: 28px !important;
-        font-weight: 500;
-        margin: 0 !important;
-    }
-
-    .hrk-list li::before {
-        content: "" !important;
-        position: absolute !important;
-        left: 0 !important;
-        top: 5px !important;
-        display: block;
-        width: 18px;
-        height: 16px;
-        background: url('data:image/svg+xml,<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 13.7643L6.77177 17L19 1" stroke="%2344B8BA" stroke-width="2" stroke-linecap="round"/></svg>');
-        background-position: center;
-        background-size: cover;
-    }
-
-    .banner-hrk {
-        background: #1C8C96;
-    }
-
-    .banner-hrk .banner-hrk__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover
-    }
-
-    .banner-hrk .banner-hrk__img.mobile {
-        display: none;
-    }
-
-    @media (max-width: 768px) {
-        .banner-hrk .banner-hrk__img.desktop {
-            display: none;
-        }
-
-        .banner-hrk .banner-hrk__img.mobile {
-            display: block;
-        }
-    }
-
-    .text-block-hrk {
-        padding-top: 96px !important;
-        padding-bottom: 96px !important;
+    .we-strive-hrk .hrk-title {
+        margin-bottom: 48px;
     }
 
     .hrk-text {
@@ -222,7 +168,7 @@
     }
 
     .why-hrk {
-        margin-bottom: 96px !important;
+        margin-bottom: 96px;
     }
 
     .why-hrk__items {
@@ -233,14 +179,19 @@
     }
 
     .why-hrk__item {
-        max-width: 400px;
+        max-width: 32%;
         display: flex;
         flex-direction: column;
         gap: 16px;
         width: max-content;
-        padding: 40px !important;
+        padding: 40px;
         background: rgba(0, 0, 0, 0.03);
         border-radius: 20px;
+    }
+
+    .we-strive-hrk .why-hrk__item-1 {
+        background: #1C8C96;
+        color: #ffffff;
     }
 
     @media (max-width: 1220px) {
@@ -253,11 +204,6 @@
             max-width: none;
             width: auto;
         }
-
-        .why-hrk .why-hrk__item:last-child {
-            grid-column: 1 / -1;
-        }
-
     }
 
     .banner_2-hrk {
@@ -267,60 +213,83 @@
         background: #1C8C96;
     }
 
-    .banner_2-hrk .hrk-subtitle,
-    .banner_2-hrk .hrk-list {
-        color: var(--white);
-    }
-
     .banner_2-hrk__wrapper {
         display: grid;
         grid-template-columns: 80% 1fr;
         align-items: center;
-        padding: 96px 0 !important;
     }
 
     .banner_2-hrk__content {
-        padding: 40px 20% 40px 40px !important;
-        padding-right: 155px !important;
-        border-radius: 20px;
-        background: rgba(6, 6, 6, 0.07);
-        box-shadow: -1px 0px 5px -3px rgba(255, 255, 255, 0.75);
+        padding: 96px 0;
+        padding-right: 155px;
+        color: #ffffff;
+    }
+
+    .banner_2-hrk .hrk-title {
+        font-weight: 700;
+        font-size: 46px !important;
+        line-height: 120% !important;
+        text-transform: uppercase;
+        color: var(--white);
+    }
+
+    .banner_2-hrk .hrk-subtitle {
+        color: var(--white);
     }
 
     .banner_2-hrk__img {
-        margin-left: -155px !important;
+        position: absolute;
+        inset: 0 0 0 auto;
         object-fit: cover;
-        height: 100% !important;
-        max-width: none !important;
-    }
-
-    @media (max-width: 1310px) {
-        .banner_2-hrk__img {
-            height: auto !important;
-            width: auto;
-            max-width: 30% !important;
-            margin-left: 0 !important;
-            position: absolute !important;
-            right: 0;
-        }
-
+        height: 100%;
+        width: auto;
+        max-width: 30%;
     }
 
     @media (max-width: 992px) {
-        .banner_2-hrk__img {
-            bottom: 50px;
+
+        .banner_2-hrk__wrapper {
+            grid-template-columns: 1fr;
         }
 
+        .banner_2-hrk__content {
+            padding: 150px 0 40px;
+            padding-right: 8px;
+        }
+
+        .banner_2-hrk__img {
+            max-width: none;
+            height: 120px;
+            inset: 0 0 auto auto;
+        }
+    }
+
+    .partner_banner_2-hrk .banner_2-hrk__wrapper {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+        padding: 96px 0;
+    }
+
+    .partner_banner_2-hrk .why-hrk__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 24px;
+    }
+
+    .partner_banner_2-hrk .why-hrk__item {
+        max-width: 100%;
+        width: 100%;
+        background: #ffffff;
     }
 
     .text-block-hrk_2 {
-        padding-top: 90px !important;
-        padding-bottom: 90px !important;
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
 
     .text-block-hrk_2 .row-hrk {
         display: grid;
-        grid-template-columns: 1fr 35%;
+        grid-template-columns: 1fr 30%;
         align-items: center;
         gap: 6px;
     }
@@ -329,64 +298,115 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        margin: 0 !important;
     }
 
-    .full-title-hrk {
-        padding: 40px 0 !important;
-        color: var(--white) !important;
-        background: #1C8C96;
+    .text-block-hrk {
+        padding-top: 96px;
     }
 
-    .full-title-hrk .hrk-subtitle {
-        color: var(--white) !important;
+    .contact-us-hrk__block {
+        width: max-content;
+        display: flex;
+        gap: 96px;
+        padding: 40px;
+        background: rgba(0, 0, 0, 0.03);
+        border-radius: 20px;
     }
 
-    .text-block-hrk_3__content {
-        padding-top: 96px !important;
-        padding-bottom: 96px !important;
+    .contact-us-hrk__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
-    .text-block-hrk_3__content>p {
+    .contact-us-hrk__item .contact-us-hrk__subtitle {
+        margin-bottom: 8px !important;
+    }
+
+    .steps-hrk {
+        padding-top: 96px;
+    }
+
+    .steps-hrk__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10%;
+    }
+
+    .steps-hrk__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        align-self: flex-start;
+    }
+
+    .steps-hrk__item-2 {
+        margin-top: 150px;
+    }
+
+    .steps-hrk__arrow {
+        position: absolute;
+        top: 115%;
+        left: 50%;
+    }
+
+    .steps-hrk__item-2 .steps-hrk__arrow {
+        top: auto;
+        bottom: 115%;
+        left: 50%;
+    }
+
+    .steps-hrk__item .hrk-blue-text {
+        font-weight: 700;
+        font-size: 36px !important;
+        line-height: 100% !important;
+
+    }
+
+    .steps-hrk__subtitle {
+        font-weight: 700;
         font-size: 20px !important;
+        line-height: 100% !important;
+        margin-bottom: 8px !important;
+    }
+
+    .hrk-form {
+        color: #ffffff;
     }
 
     .form-block-hrk {
-        background: rgba(0, 0, 0, 0.03);
-        margin-bottom: 96px !important;
+        background: #1C8C96;
+        margin-bottom: 96px;
     }
 
     .form-block-hrk__wrapper {
-        padding-top: 96px !important;
-        padding-bottom: 96px !important;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .form-block-hrk .hrk-subtitle {
         display: flex;
         flex-direction: column;
+        color: #ffffff;
         margin-bottom: 16px !important;
     }
 
-    .form-block-hrk .hrk-subtitle>span {
-        font-weight: 700;
-    }
-
-    .form-block-hrk .hrk-blue-text {
-        font-size: 20px !important;
-        font-size: 500;
-    }
-
-    .form-block-hrk .hrk-form {
-        gap: 64px;
-    }
-
-    .hrk-form__inputs {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 350px);
+    .hrk-form__block {
+        display: flex;
+        flex-direction: column;
         gap: 16px;
     }
 
-    .form-block-hrk .hrk-form .hrk-form__inputs>input {
+    .hrk-form__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .form-block-hrk .hrk-form .hrk-form__inputs>input,
+    .form-block-hrk .hrk-form select,
+    .form-block-hrk .hrk-form textarea {
         width: 100%;
         max-width: 350px;
         height: 49px;
@@ -398,23 +418,104 @@
         border-radius: 20px;
         background: #ffffff;
         box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    }
 
+    .hrk-form__inputs input[type="number"]::-webkit-outer-spin-button,
+    .hrk-form__inputs input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .hrk-form__inputs .input_full {
+        width: 100%;
+        max-width: none;
+        min-width: 540px;
+    }
+
+    .form-block-hrk .hrk-form .hrk-form__inputs>input.input_450 {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .form-block-hrk .hrk-form select {
+        padding-right: 60px !important;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: #ffffff url('data:image/svg+xml,<svg width="17" height="7" viewBox="0 0 17 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8.50016 6L16 1" stroke="black" stroke-linecap="round"/></svg>') no-repeat;
+        background-position: calc(100% - 40px) center;
+    }
+
+    .hrk-download {
+        margin-bottom: 96px;
+    }
+
+    .hrk-download__title {
+        font-weight: 700;
+        font-size: 20px !important;
+        line-height: 100%;
+    }
+
+    .hrk-download__list {
+        display: flex;
+        gap: 96px;
+    }
+
+    .hrk-download__item {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .hrk-download__text {
+        color: #00000080;
+        font-size: 14px !important;
+        line-height: 100%;
+    }
+
+    .hrk-download__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hrk-download__btn:hover svg path {
+        stroke: var(--accent);
     }
 
     .form-block-hrk .hrk-form .hrk__button {
         width: max-content;
     }
 
+    @media (max-width:992px) {
+        .steps-hrk {
+            padding-top: 88px;
+        }
+
+        .steps-hrk__wrapper {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .steps-hrk__item-2 {
+            margin-top: 0;
+        }
+
+        .steps-hrk__arrow {
+            display: none;
+        }
+    }
 
     @media (max-width: 768px) {
         .hrk-title {
             font-size: 28px !important;
-            line-height: 34px !important;
+            line-height: 34px;
         }
 
         .hrk-subtitle {
             font-size: 24px !important;
-            line-height: 29px !important;
+            line-height: 29px;
         }
 
         .hrk__button {
@@ -422,37 +523,25 @@
         }
 
         .hrk-list li::before {
-            width: 13px !important;
-            height: 12px !important;
+            width: 13px;
+            height: 12px;
         }
 
         .text-block-hrk {
-            padding-top: 48px !important;
-            padding-bottom: 88px !important;
+            padding-top: 48px;
+            padding-bottom: 88px;
         }
 
         .hrk-text {
             gap: 16px;
         }
 
+        .banner_2-hrk .hrk-title {
+            font-size: 32px !important;
+        }
+
         .why-hrk {
-            margin-bottom: 88px !important;
-        }
-
-        .banner_2-hrk__wrapper {
-            grid-template-columns: 1fr;
-            padding: 48px 0 10px !important;
-        }
-
-        .banner_2-hrk__content {
-            padding: 40px 8px 40px 40px !important;
-            padding-right: 8px !important;
-        }
-
-        .banner_2-hrk__img {
-            max-width: 100% !important;
-            position: static !important;
-            margin: -45px auto 0 !important;
+            margin-bottom: 88px;
         }
 
         .text-block-hrk_2 .row-hrk {
@@ -460,18 +549,31 @@
             gap: 15px;
         }
 
-        .text-block-hrk_3__content {
-            padding-top: 32px !important;
-            padding-bottom: 88px !important;
+        .contact-us-hrk__block {
+            width: 100%;
+            flex-direction: column;
+            gap: 16px;
+            padding: 0;
+            background: transparent;
+        }
+
+        .contact-us-hrk__item {
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.03);
+            border-radius: 20px;
+        }
+
+        .contacts-list-hrk {
+            margin-bottom: 88px;
         }
 
         .form-block-hrk {
-            margin-bottom: 88px !important;
+            margin-bottom: 88px;
         }
 
         .form-block-hrk__wrapper {
-            padding-top: 48px !important;
-            padding-bottom: 48px !important;
+            padding-top: 48px;
+            padding-bottom: 48px;
         }
 
         .form-block-hrk .hrk-form {
@@ -484,22 +586,53 @@
             grid-template-columns: 1fr;
         }
 
-        .form-block-hrk .hrk-form .hrk-form__inputs>input {
+        .form-block-hrk .hrk-form .hrk-form__inputs>input,
+        .form-block-hrk .hrk-form select,
+        .form-block-hrk .hrk-form textarea {
             max-width: 100%;
+            min-width: auto;
+            font-size: 12px !important;
+            padding: 16px 32px;
+        }
+
+        .form-block-hrk .hrk-form .hrk-form__inputs>input[name="company_name"] {
+            height: 55px;
+        }
+
+        .form-block-hrk .hrk-form .hrk-form__inputs>input[name="company_name"]::-webkit-input-placeholder {
+            white-space: inherit;
+            top: -7px;
+            position: relative;
         }
 
         .form-block-hrk .hrk-form .hrk__button {
             align-self: center;
         }
-    }
 
-    @media (max-width: 450px) {
-        .services-list__item.item-5-hrk .img-hrk {
-            max-width: 100%;
-            max-height: 326px;
-            margin-bottom: 0 !important;
+        .hrk-rules__wrapper {
+            padding-bottom: 88px;
+            gap: 24px;
+        }
+
+        .upload-content {
+            margin: 0 auto;
+        }
+
+        .hrk-download__title {
+            font-size: 24px !important;
+        }
+
+        .hrk-download__list {
+            flex-direction: column;
+            align-items: center;
+            gap: 64px;
+        }
+
+        .hrk-download__item {
+            gap: 24px;
         }
     }
+
 
     /*popup start */
 
@@ -539,7 +672,7 @@
         flex-direction: column;
         background-color: white;
         width: 100%;
-        padding: 96px 40px !important;
+        padding: 96px 40px;
         outline: 0;
         border-radius: 20px;
         box-shadow: 0px 1px 3px 0px #0000004D, 0px 4px 8px 3px #00000026;
@@ -563,6 +696,7 @@
         margin: 24px auto 48px !important;
     }
 
+
     .hrk-popup__title {
         width: 100%;
         display: flex;
@@ -575,14 +709,13 @@
         text-transform: none;
     }
 
-
     .hrk-popup__form-block {
         display: flex;
         justify-content: stretch;
         align-items: flex-start;
         flex-direction: column;
         gap: 30px;
-        padding: 10px 35px !important;
+        padding: 10px 35px;
     }
 
     .hrk-form {
@@ -595,7 +728,7 @@
     }
 
     .hrk-popup p {
-        margin: 0 !important;
+        margin: 0;
     }
 
     .hrk-form-error,
@@ -613,7 +746,7 @@
             width: calc(100% - 30px);
             min-height: 100%;
             height: auto;
-            padding: 0 !important;
+            padding: 0;
         }
 
         .language-popup-dialog {
@@ -624,20 +757,20 @@
 
         .hrk-popup-thanks .hrk-popup__close-thanks,
         .hrk-popup__close {
-            margin-right: -25px !important;
+            margin-right: -25px;
         }
 
         .hrk-popup-content {
-            padding: 10px 35px 40px !important;
+            padding: 10px 35px 40px;
         }
 
         .hrk-popup h2,
         .hrk-popup-thanks h2 {
-            font-size: 22px !important;
+            font-size: 22px;
         }
 
         .hrk-popup__form-block {
-            padding: 10px 0 !important;
+            padding: 10px 0;
         }
 
         .hrk-popup-thanks .hrk-popup-body p {
@@ -649,288 +782,361 @@
     /*popup end*/
 </style>
 <main>
-    <div class="about-us-page wrapper-hrk"><!-- banner block -->
-        <div class="banner-hrk">
-            <div class="container-hrk"><img alt="banner" class="banner-hrk__img desktop" loading="lazy"
-                    src="/content/uploads/images/about-hrk_banner_ua.jpg" /> <img alt="banner"
-                    class="banner-hrk__img mobile" loading="lazy"
-                    src="/content/uploads/images/about-hrk_banner_ua_mob.jpg" /></div>
-        </div>
-        <!-- Text block -->
-
-        <div class="text-block-hrk container-hrk">
-            <h1 class="hrk-title margin_32">Про нас | Hurakan</h1>
-
-            <div class="hrk-text">
-                <p>Hurakan &mdash; провідний бренд професійного кухонного обладнання <b>для HoReCa та ритейлу</b>, який
-                    з моменту заснування у 2017 році впевнено утримує позицію китайського бренду №1 в Україні. Ми
-                    ретельно підходимо до вибору партнерів і працюємо лише з перевіреними виробниками, що дозволяє
-                    гарантувати стабільну якість та надійність.</p>
-
-                <p>Наше обладнання поєднує оптимальне співвідношення ціни та функціональності, роблячи професійне
-                    обладнання доступним для закладів будь-якого формату &mdash; від маленьких кав&rsquo;ярень до
-                    масштабних ресторанів і мереж супермаркетів. Ми забезпечуємо сервісну підтримку у всіх регіонах
-                    України, щоб кожен клієнт отримував швидке та якісне обслуговування.</p>
-
-                <p>Завдяки широкій дилерській мережі та постійному вдосконаленню виробничих процесів наш асортимент
-                    невпинно зростає та вже <b>перевищує 300 найменувань</b>. Ми стежимо за світовими тенденціями та
-                    регулярно оновлюємо модельний ряд, щоб задовольнити потреби сучасного бізнесу.</p>
-
-                <p>Hurakan &mdash; це поєднання доступності, інновацій та стабільної якості. Обираючи нас, ви отримуєте
-                    не просто обладнання, а <b>надійного партнера</b> для розвитку вашого бізнесу.</p>
-            </div>
-        </div>
-        <!-- Why Hurakan -->
-
-        <div class="why-hrk container-hrk">
-            <h2 class="hrk-subtitle margin_32">ЧОМУ HURAKAN?</h2>
-
-            <div class="why-hrk__items">
-                <div class="why-hrk__item why-hrk__item-1"><svg class="why-hrk__icon" fill="none" height="60"
-                        viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M7.5 45C6.125 45 4.94834 44.5108 3.97 43.5325C2.99167 42.5542 2.50167 41.3767 2.5 40C2.49834 38.6233 2.98834 37.4467 3.97 36.47C4.95167 35.4933 6.12834 35.0033 7.5 35H8.1575C8.34417 35 8.54167 35.0417 8.75 35.125L20.125 23.75C20.0417 23.5417 20 23.3433 20 23.155V22.5C20 21.125 20.49 19.9483 21.47 18.97C22.45 17.9917 23.6267 17.5017 25 17.5C26.3733 17.4983 27.5508 17.9883 28.5325 18.97C29.5142 19.9517 30.0033 21.1283 30 22.5C30 22.5833 29.9583 23 29.875 23.75L36.25 30.125C36.4583 30.0417 36.6567 30 36.845 30H38.1575C38.3442 30 38.5417 30.0417 38.75 30.125L47.625 21.25C47.5417 21.0417 47.5 20.8433 47.5 20.655V20C47.5 18.625 47.99 17.4483 48.97 16.47C49.95 15.4917 51.1267 15.0017 52.5 15C53.8733 14.9983 55.0508 15.4883 56.0325 16.47C57.0142 17.4517 57.5033 18.6283 57.5 20C57.4967 21.3717 57.0075 22.5492 56.0325 23.5325C55.0575 24.5158 53.88 25.005 52.5 25H51.845C51.6567 25 51.4583 24.9583 51.25 24.875L42.375 33.75C42.4583 33.9583 42.5 34.1567 42.5 34.345V35C42.5 36.375 42.0108 37.5525 41.0325 38.5325C40.0542 39.5125 38.8767 40.0017 37.5 40C36.1233 39.9983 34.9467 39.5092 33.97 38.5325C32.9933 37.5558 32.5033 36.3783 32.5 35V34.345C32.5 34.1567 32.5417 33.9583 32.625 33.75L26.25 27.375C26.0417 27.4583 25.8433 27.5 25.655 27.5H25C24.9167 27.5 24.5 27.4583 23.75 27.375L12.375 38.75C12.4583 38.9583 12.5 39.1567 12.5 39.345V40C12.5 41.375 12.0108 42.5525 11.0325 43.5325C10.0542 44.5125 8.87667 45.0017 7.5 45Z"
-                            fill="#44B8BA"></path>
-                    </svg>
-
-                    <p>На ринку з 2017</p>
-                </div>
-
-                <div class="why-hrk__item why-hrk__item-2"><svg class="why-hrk__icon" fill="none" height="60"
-                        viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M42.2504 43.5723C43.0418 46.4609 43.6125 48.5466 43.8636 50.1084C44.1198 51.7012 43.9894 52.4684 43.6918 52.9131L43.6908 52.9141C43.4162 53.3251 43.0526 53.6483 42.6361 53.8613C42.2259 54.0702 41.5511 54.0961 40.1273 53.5586C38.7336 53.0324 36.9076 52.0829 34.3646 50.7578H34.3636C32.7593 49.9234 31.7263 49.366 30.6039 49.2461L30.597 49.2451L30.2992 49.2227C30.0005 49.2077 29.7006 49.2153 29.4027 49.2451L29.3969 49.2461C28.2744 49.3659 27.2406 49.9191 25.6351 50.7578C23.0921 52.0829 21.2662 53.0324 19.8724 53.5586C18.4487 54.0961 17.7738 54.0702 17.3636 53.8613H17.3627C16.9987 53.675 16.6754 53.4041 16.4164 53.0645L16.309 52.9141C16.0117 52.469 15.8812 51.7012 16.1371 50.1084C16.3879 48.5466 16.958 46.4607 17.7494 43.5723L18.3314 41.4473C21.8297 43.6069 25.8687 44.7549 29.9984 44.749V44.75L29.9994 44.749L30.0013 44.75L30.0004 44.749C34.1301 44.7552 38.169 43.6068 41.6674 41.4473L42.2504 43.5723Z"
-                            fill="#44B8BA" stroke="#44B8BA" stroke-width="2"></path>
-                        <path
-                            d="M30 5C34.6413 5 39.0921 6.84409 42.374 10.126C45.6559 13.4079 47.5 17.8587 47.5 22.5C47.5 24.7981 47.0474 27.0741 46.168 29.1973C45.2885 31.3204 43.999 33.2491 42.374 34.874C40.7491 36.499 38.8204 37.7885 36.6973 38.668C34.5741 39.5474 32.2981 40 30 40C27.7019 40 25.4259 39.5474 23.3027 38.668C21.1796 37.7885 19.2509 36.499 17.626 34.874C16.001 33.2491 14.7115 31.3204 13.832 29.1973C12.9526 27.0741 12.5 24.7981 12.5 22.5C12.5 17.8587 14.3441 13.4079 17.626 10.126C20.9079 6.84409 25.3587 5 30 5ZM37.2949 15.6973C36.8514 15.3681 36.2246 15.4608 35.8955 15.9043L27.7998 26.8125L24.5 24.9082C24.0217 24.6321 23.4099 24.7961 23.1338 25.2744C22.858 25.7526 23.022 26.3635 23.5 26.6396L27.5723 28.9912L28.3438 29.4365L28.875 28.7207L37.502 17.0957C37.8309 16.6523 37.7382 16.0264 37.2949 15.6973Z"
-                            fill="#44B8BA" opacity="0.4"></path>
-                    </svg>
-
-                    <p>Менше 1 % рекламацій</p>
-                </div>
-
-                <div class="why-hrk__item why-hrk__item-3"><svg class="why-hrk__icon" fill="none" height="60"
-                        viewbox="0 0 68 60" width="68" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_93_41)">
-                            <path
-                                d="M32.2528 36.457C28.4632 31.8633 19.8334 20.4609 19.8334 14.0625C19.8334 6.29648 26.173 0 34 0C41.8271 0 48.1667 6.29648 48.1667 14.0625C48.1667 20.4609 39.5368 31.8633 35.7473 36.457C34.8382 37.6875 33.1618 37.6875 32.2528 36.457ZM34 17.8125C36.6091 17.8125 38.7223 15.7148 38.7223 13.125C38.7223 10.5363 36.6091 8.4375 34 8.4375C31.391 8.4375 29.2778 10.5363 29.2778 13.125C29.2778 15.7148 31.391 17.8125 34 17.8125Z"
-                                fill="#44B8BA"></path>
-                            <path
-                                d="M49.1111 58.9453V23.4843C49.5243 22.6758 49.9021 21.8789 50.2444 21.082C50.3035 20.9297 50.3625 20.789 50.4215 20.6367L64.116 15.1992C65.9812 14.4609 68 15.8203 68 17.8125V49.5468C68 50.6953 67.2917 51.7265 66.2174 52.1601L49.1111 58.9453ZM1.78146 21.9492L16.2444 16.207C16.5278 17.8711 17.1062 19.5234 17.7556 21.082C18.0979 21.8789 18.4757 22.6758 18.8889 23.4843V52.9453L3.88521 58.9101C2.02465 59.5429 0 58.289 0 56.2968V24.5625C0 23.414 0.705382 22.2773 1.78146 21.9492ZM45.3333 59.0976L22.5604 52.664V29.8828C25.0868 33.5507 27.6604 36.8672 29.3014 38.8008C31.7215 41.9062 36.2785 41.9062 38.6986 38.8008C40.3396 36.8672 42.9132 33.5507 45.3333 29.8828V59.0976Z"
-                                fill="#44B8BA" opacity="0.4"></path>
-                        </g>
-                        <defs>
-                            <clippath id="clip0_93_41">
-                                <rect fill="white" height="60" width="68"></rect>
-                            </clippath>
-                        </defs>
-                    </svg>
-
-                    <p>Дилери у 20+ регіонах</p>
-                </div>
-
-                <div class="why-hrk__item why-hrk__item-4"><svg class="why-hrk__icon" fill="none" height="60"
-                        viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_93_47)">
-                            <path
-                                d="M50 30C51.7601 29.9741 53.4408 29.2635 54.6855 28.0188C55.9302 26.7741 56.6409 25.0934 56.6667 23.3333V9.99995H40V7.38329C39.9979 6.84924 39.8905 6.32086 39.6841 5.8283C39.4777 5.33575 39.1763 4.88867 38.7972 4.51259C38.418 4.13651 37.9685 3.8388 37.4742 3.63646C36.98 3.43411 36.4507 3.33109 35.9167 3.33329H24.0834C23.5493 3.33109 23.0201 3.43411 22.5259 3.63646C22.0316 3.8388 21.5821 4.13651 21.2029 4.51259C20.8237 4.88867 20.5224 5.33575 20.316 5.8283C20.1096 6.32086 20.0022 6.84924 20 7.38329V9.99995H3.33337V23.3333C3.35959 25.1077 4.08179 26.8007 5.34436 28.0477C6.60693 29.2947 8.30882 29.9958 10.0834 30H16.75V26.5333H20.0834V36.0333C20.0834 36.4753 19.9078 36.8992 19.5952 37.2118C19.2827 37.5244 18.8587 37.7 18.4167 37.7C17.9747 37.7 17.5508 37.5244 17.2382 37.2118C16.9256 36.8992 16.75 36.4753 16.75 36.0333V33.4333H10.1C7.59825 33.4292 5.18701 32.4968 3.33337 30.8166V46.5666C3.33337 47.4507 3.68456 48.2985 4.30968 48.9236C4.93481 49.5488 5.78265 49.9 6.66671 49.9H53.3334C54.2174 49.9 55.0653 49.5488 55.6904 48.9236C56.3155 48.2985 56.6667 47.4507 56.6667 46.5666V30.8166C54.8182 32.5051 52.4036 33.4389 49.9 33.4333H46.6667V30H50ZM23.3334 7.38329C23.342 7.19021 23.4248 7.0079 23.5645 6.87438C23.7042 6.74085 23.8901 6.66643 24.0834 6.66662H35.9167C36.11 6.66643 36.2959 6.74085 36.4356 6.87438C36.5753 7.0079 36.6581 7.19021 36.6667 7.38329V9.99995H23.3334V7.38329ZM43.3334 36.0333C43.3334 36.4753 43.1578 36.8992 42.8452 37.2118C42.5327 37.5244 42.1087 37.7 41.6667 37.7C41.2247 37.7 40.8008 37.5244 40.4882 37.2118C40.1756 36.8992 40 36.4753 40 36.0333V33.4333H23.3334V30H40V26.5333H43.3334V36.0333Z"
-                                fill="#44B8BA"></path>
-                        </g>
-                        <defs>
-                            <clippath id="clip0_93_47">
-                                <rect fill="white" height="60" width="60"></rect>
-                            </clippath>
-                        </defs>
-                    </svg>
-
-                    <p>1 000+ реалізованих проєктів</p>
-                </div>
-
-                <div class="why-hrk__item why-hrk__item-5"><svg class="why-hrk__icon" fill="none" height="60"
-                        viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M54.0833 14.0667L36.6666 25.5001V15.8501C36.6677 15.5347 36.5793 15.2254 36.4116 14.9583C36.2439 14.6912 36.0039 14.4771 35.7194 14.341C35.4349 14.2048 35.1176 14.1522 34.8044 14.1892C34.4912 14.2262 34.1949 14.3514 33.95 14.5501L23.45 23.3334H16.6666V6.76672L6.66665 4.51672V23.3334H3.33331V51.6667C3.33331 52.1088 3.50891 52.5327 3.82147 52.8452C4.13403 53.1578 4.55795 53.3334 4.99998 53.3334H55C55.442 53.3334 55.8659 53.1578 56.1785 52.8452C56.4911 52.5327 56.6666 52.1088 56.6666 51.6667V15.4501C56.6651 15.1499 56.5825 14.8558 56.4277 14.5987C56.2728 14.3416 56.0514 14.1311 55.7868 13.9894C55.5222 13.8477 55.2242 13.7801 54.9244 13.7937C54.6246 13.8073 54.334 13.9016 54.0833 14.0667ZM23.3333 48.3334H9.99998V45.0001H23.3333V48.3334ZM23.3333 41.6667H9.99998V38.3334H23.3333V41.6667ZM23.3333 35.0001H9.99998V31.6667H23.3333V35.0001ZM36.6666 48.3334H33.3333V43.3334H36.6666V48.3334ZM36.6666 38.3334H33.3333V33.3334H36.6666V38.3334ZM43.3333 48.3334H40V43.3334H43.3333V48.3334ZM43.3333 38.3334H40V33.3334H43.3333V38.3334ZM50 48.3334H46.6666V43.3334H50V48.3334ZM50 38.3334H46.6666V33.3334H50V38.3334Z"
-                            fill="#44B8BA"></path>
-                    </svg>
-
-                    <p>50+ заводів-виробників у Китаї</p>
-                </div>
-
-                <div class="why-hrk__item why-hrk__item-6"><svg class="why-hrk__icon" fill="none" height="60"
-                        viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.5 52.5C11.125 52.5 9.94833 52.0108 8.97 51.0325C7.99167 50.0542 7.50167 48.8767 7.5 47.5V16.3125C7.5 15.7292 7.59417 15.1667 7.7825 14.625C7.97083 14.0833 8.25167 13.5833 8.625 13.125L11.75 9.31251C12.2083 8.72918 12.7808 8.28085 13.4675 7.96751C14.1542 7.65418 14.8733 7.49835 15.625 7.50001H44.375C45.125 7.50001 45.8442 7.65668 46.5325 7.97001C47.2208 8.28335 47.7933 8.73085 48.25 9.31251L51.375 13.125C51.75 13.5833 52.0317 14.0833 52.22 14.625C52.4083 15.1667 52.5017 15.7292 52.5 16.3125V47.5C52.5 48.875 52.0108 50.0525 51.0325 51.0325C50.0542 52.0125 48.8767 52.5017 47.5 52.5H12.5ZM13.5 15H46.5L44.375 12.5H15.625L13.5 15ZM40 20H20V40L30 35L40 40V20Z"
-                            fill="#44B8BA"></path>
-                    </svg>
-
-                    <p>Склади в Україні (основний &ndash; 3000 м&sup2;, шоу-рум &ndash; 1 000 м&sup2;)</p>
-                </div>
-
-                <div class="why-hrk__item why-hrk__item-7"><svg class="why-hrk__icon" fill="none" height="60"
-                        viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M26.0721 38.1472L26.0593 38.1172C25.8006 38.056 25.5434 37.9888 25.2878 37.9157L25.2686 37.9093C22.8242 37.2066 20.5668 35.9689 18.66 34.2857C16.563 32.4358 14.9503 30.101 13.9626 27.4849C12.975 24.8688 12.6423 22.0507 12.9936 19.2765C13.3449 16.5023 14.3695 13.8562 15.9781 11.5688C17.5866 9.28142 19.7304 7.42227 22.2223 6.15346C24.7142 4.88466 27.4787 4.24471 30.2747 4.28942C33.0707 4.33414 35.8134 5.06215 38.2635 6.40999C40.7135 7.75783 42.7967 9.68457 44.3313 12.0222C45.866 14.3599 46.8054 17.0374 47.0678 19.8214C47.1514 20.7064 46.425 21.4286 45.5357 21.4286C44.6486 21.4286 43.9393 20.7064 43.8364 19.8236C43.5531 17.3878 42.6318 15.0699 41.1655 13.1044C39.6993 11.1388 37.7401 9.59513 35.486 8.62947C33.2319 7.66381 30.7629 7.31036 28.3284 7.60485C25.8939 7.89934 23.5803 8.83134 21.6215 10.3066C19.6627 11.7819 18.1281 13.7482 17.1728 16.0067C16.2176 18.2652 15.8755 20.7359 16.1812 23.169C16.4869 25.6021 17.4295 27.9113 18.9138 29.8633C20.3981 31.8153 22.3714 33.3409 24.6343 34.2857L24.72 34.3222C25.1486 34.4979 25.5886 34.6529 26.04 34.7872C26.4193 33.8707 27.1047 33.1141 27.9794 32.6465C28.8541 32.1789 29.8639 32.0291 30.8367 32.2227C31.8095 32.4164 32.685 32.9414 33.3139 33.7084C33.9429 34.4754 34.2863 35.4367 34.2857 36.4286C34.2866 37.4135 33.9483 38.3687 33.3276 39.1335C32.7069 39.8983 31.8418 40.4259 30.8777 40.6276C29.9136 40.8293 28.9095 40.6928 28.0343 40.241C27.159 39.7893 26.4661 39.0499 26.0721 38.1472ZM23.9593 40.8729C20.1526 39.689 16.7773 37.4134 14.2521 34.3286C12.6872 34.5119 11.2441 35.2635 10.1969 36.4407C9.14966 37.6179 8.57122 39.1387 8.57141 40.7143V42.2464C8.57141 50.2136 17.5928 55.7143 30 55.7143C42.4071 55.7143 51.4286 49.9114 51.4286 42.2464V40.7143C51.4286 39.0093 50.7513 37.3742 49.5457 36.1686C48.3401 34.963 46.7049 34.2857 45 34.2857H37.1893C37.6947 35.9787 37.5863 37.7957 36.8831 39.4165C36.1799 41.0373 34.9271 42.3578 33.3456 43.1453C31.764 43.9328 29.9552 44.1366 28.238 43.7209C26.5208 43.3051 25.0055 42.2965 23.9593 40.8729ZM40.7143 21.4286C40.7143 18.1886 39.2786 15.285 37.005 13.32C35.8642 12.3359 34.5288 11.6035 33.0858 11.1705C31.6427 10.7375 30.1247 10.6137 28.6306 10.8072C27.1365 11.0007 25.7 11.5071 24.4149 12.2933C23.1297 13.0796 22.0249 14.128 21.1724 15.3702C20.3199 16.6124 19.739 18.0204 19.4675 19.5023C19.1961 20.9842 19.2402 22.5067 19.597 23.9704C19.9539 25.4341 20.6154 26.8061 21.5383 27.9968C22.4613 29.1875 23.6251 30.1702 24.9536 30.8807C26.3342 29.6248 28.1335 28.9287 30 28.9286C31.8672 28.9282 33.6674 29.6243 35.0486 30.8807C36.7605 29.9661 38.1919 28.6037 39.1898 26.9389C40.1877 25.2741 40.7146 23.3695 40.7143 21.4286Z"
-                            fill="#44B8BA"></path>
-                    </svg>
-
-                    <p>Cервісна підтримка по всій Україні</p>
-                </div>
-            </div>
-        </div>
-        <!-- Banner-2 -->
-
-        <div class="banner_2-hrk">
-            <div class="banner_2-hrk__wrapper container-hrk">
-                <div class="banner_2-hrk__content">
-                    <h2 class="hrk-subtitle margin_32">ЩО МИ ПРОПОНУЄМО?</h2>
-
-                    <ul class="hrk-list">
-                        <li>Бюджетні комплексні рішення</li>
-                        <li>Проєкти під ключ</li>
-                        <li>Сервісне обслуговування</li>
-                        <li>Запчастини</li>
-                        <li>Доставка по Україні 1-3 дні</li>
-                        <li>Технічна підтримка, послуги монтажу</li>
-                    </ul>
-                </div>
-                <img alt="banner" class="banner_2-hrk__img" height="440" loading="lazy"
-                    src="/content/uploads/images/banner_hrk_2.png" width="440" />
-            </div>
-        </div>
-        <!-- Text block -->
-
-        <div class="text-block-hrk text-block-hrk_2 container-hrk">
-            <div class="row-hrk">
-                <div class="col-hrk">
-                    <h2 class="hrk-subtitle margin_32">ШИРОКА ДИЛЕРСЬКА МЕРЕЖА</h2>
-
-                    <p>Hurakan має представництва <b>у більшості регіонів України</b> (чинні: Вінниця, Дніпро,
-                        Запоріжжя, Івано-Франківськ, Кривий Ріг, Кропивницький, Луцьк, Львів, Мукачево, Миколаїв, Одеса,
-                        Полтава, Рівне, Суми, Тернопіль, Ужгород, Харків, Черкаси, Чернігів, Чернівці).</p>
-                </div>
-
-                <div class="col-hrk col-hrk__img"><img alt="map" height="284" loading="lazy"
-                        src="/content/uploads/images/hrk_map_1.png" width="426" /></div>
-            </div>
-        </div>
-
-        <div class="text-block-hrk_3">
-            <div class="full-title-hrk">
-                <div class="container-hrk">
-                    <h2 class="hrk-subtitle">HURAKAN. ПЕРЕВІРЕНО &amp; НАДІЙНО / TESTED &amp; TRUSTED</h2>
+      <div class="partner-page wrapper-hrk">
+            <!-- Banner-2 -->
+            <div class="banner_2-hrk">
+                <div class="banner_2-hrk__wrapper container-hrk">
+                    <div class="banner_2-hrk__content">
+                        <h2 class="hrk-title margin_32">Станьте партнером бренду <span
+                                class="hrk-blue-text">Hurakan!</span></h2>
+                        <p>Запрошуємо до співпраці дилерів по всій Україні. Ми будуємо надійні відносини та пропонуємо
+                            вигідні умови для розвитку вашого бізнесу.</p>
+                    </div>
+                    <img class="banner_2-hrk__img" src="/content/uploads/images/banner_part_img.svg" alt="banner" width="440"
+                        height="440">
                 </div>
             </div>
 
-            <div class="text-block-hrk_3__content container-hrk">
-                <p class="margin_32">Наші принципи:</p>
-
+            <!-- We strive to-->
+            <div class="we-strive-hrk container-hrk">
+                <h1 class="hrk-title margin_32">Стати партнером</h1>
+                <h2 class="hrk-subtitle margin_32">Ми прагнемо до:</h2>
                 <div class="why-hrk__items">
-                    <div class="why-hrk__item why-hrk__item-1"><svg class="why-hrk__icon" fill="none" height="60"
-                            viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
+                    <div class="why-hrk__item why-hrk__item-1">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M29.9989 45.6987L18.8498 52.578C18.3573 52.8991 17.8424 53.0367 17.3051 52.9908C16.7678 52.9449 16.2977 52.7615 15.8947 52.4404C15.4917 52.1194 15.1783 51.7186 14.9544 51.2379C14.7305 50.7573 14.6858 50.218 14.8201 49.6199L17.7752 36.618L7.90233 27.8813C7.45458 27.4685 7.17518 26.9979 7.06414 26.4696C6.9531 25.9413 6.98623 25.4258 7.16354 24.9231C7.34085 24.4205 7.6095 24.0077 7.9695 23.6849C8.32949 23.362 8.82201 23.1556 9.44707 23.0657L22.4766 21.8962L27.5138 9.65104C27.7377 9.10069 28.0852 8.68793 28.5562 8.41276C29.0272 8.13759 29.5081 8 29.9989 8C30.4896 8 30.9705 8.13759 31.4415 8.41276C31.9125 8.68793 32.26 9.10069 32.4839 9.65104L37.5211 21.8962L50.5506 23.0657C51.1775 23.1574 51.67 23.3638 52.0282 23.6849C52.3864 24.0059 52.6551 24.4187 52.8342 24.9231C53.0133 25.4276 53.0473 25.944 52.9363 26.4724C52.8252 27.0007 52.5449 27.4703 52.0954 27.8813L42.2225 36.618L45.1776 49.6199C45.3119 50.2161 45.2672 50.7555 45.0433 51.2379C44.8194 51.7204 44.506 52.1212 44.103 52.4404C43.7 52.7596 43.2299 52.9431 42.6926 52.9908C42.1553 53.0385 41.6404 52.9009 41.1479 52.578L29.9989 45.6987Z"
-                                fill="#44B8BA"></path>
+                                d="M59.6016 25.2914L53.6203 13.3242C53.4 12.8837 53.095 12.491 52.7229 12.1684C52.3507 11.8458 51.9187 11.5996 51.4514 11.444C50.9841 11.2884 50.4908 11.2264 49.9995 11.2614C49.5083 11.2965 49.0287 11.428 48.5883 11.6484L42.7594 14.5617L30.4805 11.3133C30.1654 11.2313 29.8346 11.2313 29.5195 11.3133L17.2406 14.5617L11.4117 11.6484C10.9713 11.428 10.4918 11.2965 10.0005 11.2614C9.50923 11.2264 9.01588 11.2884 8.5486 11.444C8.08132 11.5996 7.64928 11.8458 7.27713 12.1684C6.90499 12.491 6.60003 12.8837 6.37969 13.3242L0.398442 25.289C0.178026 25.7295 0.0465284 26.209 0.0114576 26.7003C-0.0236131 27.1915 0.0384302 27.6849 0.194044 28.1522C0.349659 28.6194 0.595796 29.0515 0.918399 29.4236C1.241 29.7958 1.63375 30.1007 2.07422 30.3211L8.40235 33.4875L21.4078 42.7758C21.5996 42.9119 21.8149 43.0113 22.043 43.0687L37.043 46.8187C37.3571 46.8975 37.6863 46.8936 37.9984 46.8073C38.3106 46.7211 38.5951 46.5554 38.8242 46.3265L48.1992 36.9515L51.7336 33.4172L57.9258 30.3211C58.8147 29.8761 59.4906 29.0963 59.8049 28.1531C60.1191 27.21 60.046 26.1806 59.6016 25.2914ZM46.7367 33.1125L38.6719 26.6531C38.3106 26.3638 37.855 26.2183 37.3929 26.2447C36.9308 26.2711 36.4948 26.4675 36.1688 26.7961C31.9945 31.0008 27.3422 30.4687 24.375 28.5937L34.5094 18.75H41.9648L48.3422 31.5023L46.7367 33.1125ZM36.9234 42.9234L23.3016 39.5179L11.7703 31.282L18.3328 18.157L30 15.0656L32.2969 15.6726L21.75 25.9101L21.7313 25.9312C21.3342 26.3282 21.0314 26.8093 20.8452 27.339C20.659 27.8687 20.594 28.4334 20.6552 28.9916C20.7164 29.5497 20.9022 30.0869 21.1987 30.5637C21.4953 31.0404 21.8951 31.4445 22.3688 31.7461C27.1875 34.8234 33.0023 34.3242 37.582 30.5742L44.0625 35.7797L36.9234 42.9234ZM30.8953 51.0797C30.794 51.4849 30.5603 51.8447 30.2312 52.102C29.9022 52.3593 29.4966 52.4994 29.0789 52.5C28.9248 52.5001 28.7713 52.4812 28.6219 52.4437L18.8461 49.9992C18.6177 49.9428 18.4021 49.8434 18.2109 49.7062L12.0352 45.2953C11.6554 44.9971 11.4053 44.564 11.337 44.0861C11.2686 43.6082 11.3872 43.1223 11.6681 42.7296C11.949 42.337 12.3706 42.0678 12.845 41.9781C13.3193 41.8885 13.81 41.9853 14.2148 42.2484L20.1 46.4531L29.5313 48.8062C30.0136 48.9269 30.4282 49.2342 30.684 49.6605C30.9398 50.0868 31.0158 50.5973 30.8953 51.0797Z"
+                                fill="white" />
                         </svg>
-
-                        <p>1. Контроль якості;</p>
+                        <p>Взаємовигідних партнерських відносин</p>
                     </div>
 
-                    <div class="why-hrk__item why-hrk__item-2"><svg class="why-hrk__icon" fill="none" height="60"
-                            viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M47.9964 22.2296L47.4723 23.4387C47.3904 23.6356 47.2523 23.8038 47.0752 23.9221C46.8982 24.0404 46.6902 24.1035 46.4774 24.1035C46.2647 24.1035 46.0567 24.0404 45.8797 23.9221C45.7026 23.8038 45.5644 23.6356 45.4825 23.4387L44.9585 22.2296C44.037 20.0906 42.3495 18.3756 40.2289 17.423L38.612 16.6988C38.4158 16.6083 38.2496 16.4633 38.1331 16.281C38.0166 16.0987 37.9547 15.8867 37.9547 15.6702C37.9547 15.4537 38.0166 15.2417 38.1331 15.0594C38.2496 14.877 38.4158 14.7321 38.612 14.6416L40.1395 13.9601C42.3133 12.9804 44.0297 11.2019 44.935 8.99117L45.4761 7.68591C45.5553 7.48372 45.6934 7.31014 45.8724 7.18779C46.0514 7.06544 46.2629 7 46.4796 7C46.6962 7 46.9078 7.06544 47.0868 7.18779C47.2658 7.31014 47.4038 7.48372 47.483 7.68591L48.022 8.98903C48.9263 11.2002 50.6419 12.9794 52.8154 13.9601L54.3451 14.6437C54.5406 14.7345 54.7062 14.8794 54.8223 15.0615C54.9383 15.2436 55 15.4552 55 15.6712C55 15.8873 54.9383 16.0989 54.8223 16.281C54.7062 16.4631 54.5406 16.608 54.3451 16.6988L52.7259 17.4208C50.6058 18.3744 48.919 20.0902 47.9986 22.2296M23.0429 11.2748C27.1816 11.2742 31.1791 12.7837 34.2894 15.5216C37.3997 18.2595 39.4101 22.0387 39.9456 26.1539L44.739 33.7141C45.0543 34.2118 44.9904 34.9531 44.2597 35.2693L40.0862 37.0595V43.3187C40.0862 44.4518 39.6373 45.5386 38.8382 46.3398C38.0392 47.1411 36.9554 47.5912 35.8254 47.5912H31.5667L31.5645 54H12.3908V46.1087C12.3908 43.5879 11.462 41.2017 9.7406 39.0483C7.73323 36.5351 6.47477 33.5043 6.1102 30.3051C5.74564 27.106 6.2898 23.8687 7.68001 20.9661C9.07021 18.0635 11.2499 15.6138 13.9679 13.8992C16.6859 12.1846 19.8317 11.2749 23.0429 11.2748ZM48.9359 45.6729L45.3888 43.3016C47.4927 40.1456 48.6132 36.4336 48.6078 32.6374C48.6064 31.5451 48.5184 30.4769 48.3437 29.433L52.4831 28.3649C52.7387 29.7535 52.8673 31.1776 52.8687 32.6374C52.8687 37.4611 51.42 41.943 48.9359 45.6729Z"
-                                fill="#44B8BA"></path>
+                    <div class="why-hrk__item why-hrk__item-2">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M42.211 4.87823C42.4022 4.56555 42.6802 4.3176 43.0098 4.16573C43.3393 4.01386 43.7057 3.96487 44.0627 4.02496L53.4713 5.62344C53.9497 5.70469 54.3768 5.97599 54.6588 6.37773C54.9408 6.77947 55.0547 7.27878 54.9753 7.76594L53.4091 17.3494C53.3493 17.7127 53.1851 18.0498 52.9372 18.3181C52.6894 18.5864 52.3689 18.7738 52.0165 18.8568C51.664 18.9397 51.2953 18.9144 50.9569 18.7841C50.6186 18.6537 50.3258 18.4242 50.1155 18.1244L47.5758 14.5101L34.4967 23.0205C33.939 23.3839 33.271 23.5297 32.6159 23.4311C31.9609 23.3325 31.363 22.9961 30.9323 22.4839L23.6389 13.8022L9.99994 20.9376C9.35258 21.2766 8.59948 21.3398 7.90633 21.1134C7.21317 20.887 6.63674 20.3895 6.30384 19.7304C5.97093 19.0712 5.90883 18.3044 6.13119 17.5987C6.35355 16.8929 6.84215 16.306 7.48952 15.967L23.0607 7.8181C23.6105 7.53055 24.2394 7.44032 24.8458 7.56205C25.4522 7.68377 26.0005 8.01031 26.4019 8.4888L33.5526 17.0029L44.3847 9.95315L42.2732 6.9462C42.0632 6.64635 41.9453 6.28988 41.9342 5.92182C41.9231 5.55375 42.0194 5.1906 42.211 4.87823ZM18.2558 23.1733L7.6359 29.3586C7.21636 29.6026 6.86751 29.955 6.62462 30.3803C6.38173 30.8055 6.2534 31.2886 6.2526 31.7805V53.2054C6.2526 54.748 7.4822 56 8.99724 56H18.2558V23.1733ZM22.8302 56H36.2533V30.618L30.2187 33.6883L24.1879 22.9422C23.8826 22.3963 23.4056 21.971 22.8338 21.735L22.8302 56ZM51.0816 56H40.8277V28.2892L49.8557 23.6912C50.2741 23.4785 50.739 23.3782 51.2062 23.3998C51.6734 23.4214 52.1275 23.5642 52.5252 23.8147C52.923 24.0652 53.2513 24.415 53.479 24.8309C53.7067 25.2469 53.8262 25.7152 53.8262 26.1914V53.2054C53.8262 53.9466 53.5371 54.6574 53.0224 55.1815C52.5076 55.7056 51.8095 56 51.0816 56Z"
+                                fill="#44B8BA" />
                         </svg>
-
-                        <p>2. Прозора комунікація;</p>
+                        <p>Розвитку клієнтської бази у регіонах</p>
                     </div>
 
-                    <div class="why-hrk__item why-hrk__item-3"><svg class="why-hrk__icon" fill="none" height="60"
-                            viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
+                    <div class="why-hrk__item why-hrk__item-3">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M26.0721 38.147L26.0593 38.117C25.8006 38.0559 25.5434 37.9887 25.2878 37.9156L25.2686 37.9092C22.8242 37.2065 20.5668 35.9687 18.66 34.2856C16.563 32.4357 14.9503 30.1009 13.9626 27.4848C12.975 24.8686 12.6423 22.0506 12.9936 19.2764C13.3449 16.5022 14.3695 13.856 15.9781 11.5687C17.5866 9.28129 19.7304 7.42215 22.2223 6.15334C24.7142 4.88454 27.4787 4.24459 30.2747 4.2893C33.0707 4.33401 35.8134 5.06203 38.2635 6.40987C40.7135 7.75771 42.7967 9.68445 44.3313 12.0221C45.866 14.3597 46.8054 17.0373 47.0678 19.8213C47.1514 20.7063 46.425 21.4285 45.5357 21.4285C44.6486 21.4285 43.9393 20.7063 43.8364 19.8235C43.5531 17.3877 42.6318 15.0698 41.1655 13.1042C39.6993 11.1386 37.7401 9.59501 35.486 8.62935C33.2319 7.66369 30.7629 7.31024 28.3284 7.60473C25.8939 7.89922 23.5803 8.83122 21.6215 10.3065C19.6627 11.7818 18.1281 13.7481 17.1728 16.0066C16.2176 18.2651 15.8755 20.7357 16.1812 23.1688C16.4869 25.6019 17.4295 27.9112 18.9138 29.8632C20.3981 31.8152 22.3714 33.3407 24.6343 34.2856L24.72 34.322C25.1486 34.4977 25.5886 34.6527 26.04 34.787C26.4193 33.8705 27.1047 33.114 27.9794 32.6464C28.8541 32.1787 29.8639 32.029 30.8367 32.2226C31.8095 32.4163 32.685 32.9413 33.3139 33.7083C33.9429 34.4752 34.2863 35.4366 34.2857 36.4285C34.2866 37.4134 33.9483 38.3686 33.3276 39.1334C32.7069 39.8981 31.8418 40.4258 30.8777 40.6275C29.9136 40.8292 28.9095 40.6927 28.0343 40.2409C27.159 39.7892 26.4661 39.0497 26.0721 38.147ZM23.9593 40.8727C20.1526 39.6888 16.7773 37.4133 14.2521 34.3285C12.6872 34.5118 11.2441 35.2634 10.1969 36.4406C9.14966 37.6178 8.57122 39.1386 8.57141 40.7142V42.2463C8.57141 50.2135 17.5928 55.7142 30 55.7142C42.4071 55.7142 51.4286 49.9113 51.4286 42.2463V40.7142C51.4286 39.0092 50.7513 37.3741 49.5457 36.1685C48.3401 34.9629 46.7049 34.2856 45 34.2856H37.1893C37.6947 35.9785 37.5863 37.7956 36.8831 39.4164C36.1799 41.0372 34.9271 42.3577 33.3456 43.1452C31.764 43.9326 29.9552 44.1365 28.238 43.7207C26.5208 43.305 25.0055 42.2964 23.9593 40.8727ZM40.7143 21.4285C40.7143 18.1885 39.2786 15.2849 37.005 13.3199C35.8642 12.3358 34.5288 11.6034 33.0858 11.1704C31.6427 10.7374 30.1247 10.6136 28.6306 10.8071C27.1365 11.0005 25.7 11.5069 24.4149 12.2932C23.1297 13.0794 22.0249 14.1279 21.1724 15.3701C20.3199 16.6122 19.739 18.0202 19.4675 19.5022C19.1961 20.9841 19.2402 22.5066 19.597 23.9703C19.9539 25.434 20.6154 26.806 21.5383 27.9967C22.4613 29.1874 23.6251 30.1701 24.9536 30.8806C26.3342 29.6246 28.1335 28.9286 30 28.9285C31.8672 28.928 33.6674 29.6241 35.0486 30.8806C36.7605 29.966 38.1919 28.6036 39.1898 26.9388C40.1877 25.274 40.7146 23.3694 40.7143 21.4285Z"
-                                fill="#44B8BA"></path>
+                                d="M50 15H40V10C40 7.225 37.775 5 35 5H25C22.225 5 20 7.225 20 10V15H10C7.225 15 5.025 17.225 5.025 20L5 47.5C5 50.275 7.225 52.5 10 52.5H50C52.775 52.5 55 50.275 55 47.5V20C55 17.225 52.775 15 50 15ZM35 15H25V10H35V15Z"
+                                fill="#44B8BA" />
                         </svg>
-
-                        <p>3. Професійна підтримка;</p>
-                    </div>
-
-                    <div class="why-hrk__item why-hrk__item-4"><svg class="why-hrk__icon" fill="none" height="60"
-                            viewbox="0 0 60 60" width="60" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M29.48 51.78C28.8683 51.78 28.3308 51.5717 27.8675 51.155C27.4041 50.7417 27.1725 50.1967 27.1725 49.52C27.1725 49.1967 27.2433 48.8383 27.385 48.445C27.5266 48.0517 27.7383 47.7142 28.02 47.4325L37.2275 38.2275L35.8475 36.8475L26.655 46.0525C26.3716 46.3358 26.0525 46.5475 25.6975 46.6875C25.3425 46.8292 24.9816 46.9 24.615 46.9C23.9716 46.9 23.4258 46.6758 22.9775 46.2275C22.5291 45.7792 22.3058 45.2342 22.3075 44.5925C22.3075 44.2075 22.3858 43.8317 22.5425 43.465C22.7008 43.0983 22.9 42.7942 23.14 42.5525L32.3475 33.3475L30.98 31.98L21.775 41.175C21.525 41.425 21.2141 41.6292 20.8425 41.7875C20.4708 41.9458 20.0975 42.0242 19.7225 42.0225C19.0875 42.0225 18.5441 41.7967 18.0925 41.345C17.6408 40.8933 17.415 40.35 17.415 39.715C17.415 39.3483 17.485 38.9875 17.625 38.6325C17.765 38.2775 17.9766 37.9583 18.26 37.675L26.89 29.045L25.51 27.68L16.895 36.31C16.655 36.55 16.3491 36.7492 15.9775 36.9075C15.6041 37.0642 15.2258 37.1425 14.8425 37.1425C14.1658 37.1425 13.6116 36.9267 13.18 36.495C12.75 36.065 12.535 35.5117 12.535 34.835C12.535 34.4683 12.605 34.1075 12.745 33.7525C12.8866 33.3975 13.0983 33.0783 13.38 32.795L25.73 20.445L31.115 25.845C31.5733 26.3033 32.0908 26.6275 32.6675 26.8175C33.2458 27.0092 33.8308 27.105 34.4225 27.105C35.6275 27.105 36.6341 26.7083 37.4425 25.915C38.2508 25.1217 38.655 24.1075 38.655 22.8725C38.655 22.2892 38.5425 21.7008 38.3175 21.1075C38.0925 20.5158 37.7416 19.9808 37.265 19.5025L30.645 12.8825L33.095 10.4325C33.645 9.89251 34.3091 9.47001 35.0875 9.16501C35.8658 8.85834 36.6441 8.70501 37.4225 8.70501C38.2508 8.70501 39.0591 8.85834 39.8475 9.16501C40.6358 9.47001 41.3083 9.90168 41.865 10.46L52.575 21.175C53.1 21.7017 53.5158 22.3433 53.8225 23.1C54.1291 23.855 54.2825 24.6925 54.2825 25.6125C54.2825 26.4458 54.1266 27.2333 53.815 27.975C53.505 28.7167 53.0916 29.3458 52.575 29.8625L31.5225 50.93C31.2525 51.2 30.9358 51.4083 30.5725 51.555C30.2125 51.7033 29.8491 51.7775 29.4825 51.7775M10.4975 32.93L7.90996 30.3425C7.20163 29.6442 6.66829 28.805 6.30996 27.825C5.95163 26.8433 5.77246 25.885 5.77246 24.95C5.77246 23.9633 5.93246 23.0675 6.25246 22.2625C6.57246 21.4575 6.98079 20.8067 7.47746 20.31L17.32 10.455C17.8583 9.91668 18.4583 9.48918 19.12 9.17251C19.7783 8.85584 20.4975 8.69751 21.2775 8.69751C22.1141 8.69751 22.8808 8.84668 23.5775 9.14501C24.2775 9.44168 24.9158 9.87834 25.4925 10.455L35.9025 20.8625C36.1525 21.1125 36.3558 21.4233 36.5125 21.795C36.6691 22.1667 36.7475 22.5192 36.7475 22.8525C36.7475 23.5192 36.53 24.0792 36.095 24.5325C35.6583 24.9825 35.1066 25.2075 34.44 25.2075C34.065 25.2075 33.7041 25.14 33.3575 25.005C33.0125 24.8683 32.6941 24.6542 32.4025 24.3625L25.7175 17.71L10.4975 32.93Z"
-                                fill="#44B8BA"></path>
-                        </svg>
-
-                        <p>4. Активна співпраця.</p>
+                        <p>Довгострокової системної співпраці</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Form block -->
 
-        <div class="form-block-hrk">
-            <div class="form-block-hrk__wrapper container-hrk">
-                <h2 class="hrk-subtitle"><span>Залишились питання?</span> <span>Потрібна індивідуальна
-                        консультація?</span></h2>
-
-                <p class="hrk-blue-text margin_32">Залиште свої контакти &ndash; і ми зв&#39;яжемось з вами найближчим
-                    часом</p>
-
-                <form action="" class="hrk-form">
-                    <div class="hrk-form__inputs"><input name="user_name" placeholder="ПІБ" type="text" /> <input
-                            name="user_phone" type="tel" value="+ 380" /> <input name="user_email" placeholder="E-mail"
-                            type="email" /></div>
-                    <button class="hrk__button open-popup_hrk">Надіслати</button>
-                </form>
-            </div>
-        </div>
-        <!-- Thanks popup -->
-
-        <div class="hrk-popup-thanks success">
-            <div class="hrk-popup-dialog">
-                <div class="hrk-popup-content">
-                    <div class="hrk-popup-body">
-                        <div class="hrk-popup__title"><svg fill="none" height="55" viewbox="0 0 60 55" width="60"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 35.933L24.5816 42L47 12" stroke="#28C20C" stroke-linecap="round"
-                                    stroke-width="2"></path>
-                            </svg>
-
-                            <h2 class="hrk-subtitle">Дякуємо!</h2>
-                        </div>
-
-                        <p>Ваші дані успішно надіслані. Ми звʼяжемось з вами найближчим часом</p>
-
-                        <div class="hrk-popup__close-thanks"><button class="hrk__button">Готово</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="hrk-popup-thanks error">
-            <div class="hrk-popup-dialog">
-                <div class="hrk-popup-content">
-                    <div class="hrk-popup-body">
-                        <div class="hrk-popup__title"><svg fill="none" height="60" viewbox="0 0 60 60" width="60"
+            <!-- Banner-2 -->
+            <div class="partner_banner_2-hrk banner_2-hrk">
+                <div class="banner_2-hrk__wrapper container-hrk">
+                    <h2 class="hrk-subtitle margin_32">Працюючи з брендом Hurakan, ви отримаєте:</h2>
+                    <div class="why-hrk__items">
+                        <div class="why-hrk__item why-hrk__item-1">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M30 31.7701L16.885 44.8851C16.6517 45.1184 16.365 45.2434 16.025 45.2601C15.685 45.2768 15.3817 45.1518 15.115 44.8851C14.8483 44.6184 14.715 44.3234 14.715 44.0001C14.715 43.6768 14.8483 43.3818 15.115 43.1151L28.23 30.0001L15.115 16.8851C14.8817 16.6518 14.7567 16.3651 14.74 16.0251C14.7233 15.6851 14.8483 15.3818 15.115 15.1151C15.3817 14.8484 15.6767 14.7151 16 14.7151C16.3233 14.7151 16.6183 14.8484 16.885 15.1151L30 28.2301L43.115 15.1151C43.3483 14.8818 43.6358 14.7568 43.9775 14.7401C44.3158 14.7234 44.6183 14.8484 44.885 15.1151C45.1517 15.3818 45.285 15.6768 45.285 16.0001C45.285 16.3234 45.1517 16.6184 44.885 16.8851L31.77 30.0001L44.885 43.1151C45.1183 43.3484 45.2433 43.6359 45.26 43.9776C45.2767 44.3159 45.1517 44.6184 44.885 44.8851C44.6183 45.1518 44.3233 45.2851 44 45.2851C43.6767 45.2851 43.3817 45.1518 43.115 44.8851L30 31.7701Z"
-                                    fill="#E00004"></path>
+                                    d="M30.0211 13.4484C30.1262 11.9933 30.6067 10.5903 31.4158 9.37639C32.225 8.16245 33.335 7.17905 34.6377 6.52218C35.9403 5.86531 37.391 5.55743 38.8482 5.62857C40.3053 5.69972 41.7191 6.14746 42.9516 6.92811C43.0925 7.0203 43.206 7.14875 43.2801 7.29995C43.3542 7.45114 43.3862 7.61951 43.3728 7.78737C43.3594 7.95522 43.301 8.11636 43.2038 8.25385C43.1065 8.39134 42.9741 8.50011 42.8203 8.56873C40.6778 9.53265 38.8592 11.0946 37.5828 13.0669C36.3065 15.0393 35.6266 17.3382 35.625 19.6875C35.625 19.9617 35.625 20.2359 35.6531 20.5055C35.666 20.6758 35.6322 20.8465 35.5552 20.999C35.4781 21.1515 35.3609 21.28 35.2161 21.3708C35.0714 21.4615 34.9046 21.5109 34.7337 21.5137C34.5629 21.5165 34.3946 21.4726 34.2469 21.3867C32.8656 20.5966 31.736 19.4321 30.9882 18.0275C30.2405 16.6229 29.9052 15.0354 30.0211 13.4484ZM56.25 37.643C56.2534 38.7144 55.9565 39.7653 55.3932 40.6766C54.8298 41.588 54.0224 42.3233 53.0625 42.7992L52.9594 42.8461L43.8586 46.7226C43.7686 46.7622 43.6753 46.7936 43.5797 46.8164L28.5797 50.5664C28.4311 50.6044 28.2784 50.6241 28.125 50.625H3.75C2.75544 50.625 1.80161 50.2299 1.09835 49.5266C0.395088 48.8234 0 47.8695 0 46.875V37.5C0 36.5054 0.395088 35.5516 1.09835 34.8483C1.80161 34.1451 2.75544 33.75 3.75 33.75H10.4742L15.7758 28.4461C16.471 27.7478 17.2976 27.1942 18.208 26.8173C19.1183 26.4403 20.0944 26.2475 21.0797 26.25H32.8125C33.8029 26.2499 34.7805 26.4739 35.672 26.9054C36.5635 27.3368 37.3458 27.9644 37.9602 28.7412C38.5746 29.518 39.0052 30.4238 39.2198 31.3906C39.4344 32.3575 39.4274 33.3604 39.1992 34.3242L49.0055 32.0695C49.8592 31.8434 50.7534 31.8164 51.6191 31.9905C52.4849 32.1646 53.2992 32.5352 53.9991 33.0737C54.6991 33.6122 55.266 34.3042 55.6563 35.0964C56.0465 35.8886 56.2496 36.7598 56.25 37.643ZM52.5 37.643C52.4997 37.3329 52.428 37.0271 52.2904 36.7493C52.1528 36.4715 51.9531 36.2291 51.7067 36.041C51.4603 35.8528 51.1739 35.724 50.8696 35.6644C50.5654 35.6049 50.2515 35.6163 49.9523 35.6976L49.8797 35.7164L34.1766 39.3281C34.0388 39.3589 33.8982 39.3746 33.757 39.375H26.25C25.7527 39.375 25.2758 39.1774 24.9242 38.8258C24.5725 38.4742 24.375 37.9973 24.375 37.5C24.375 37.0027 24.5725 36.5258 24.9242 36.1742C25.2758 35.8225 25.7527 35.625 26.25 35.625H32.8125C33.5584 35.625 34.2738 35.3287 34.8012 34.8012C35.3287 34.2738 35.625 33.5584 35.625 32.8125C35.625 32.0666 35.3287 31.3512 34.8012 30.8237C34.2738 30.2963 33.5584 30 32.8125 30H21.0797C20.5871 29.9984 20.099 30.0948 19.6439 30.2835C19.1889 30.4722 18.7759 30.7495 18.4289 31.0992L13.125 36.4008V46.875H27.8906L42.5227 43.2164L51.4289 39.4242C51.7531 39.2534 52.0243 38.9971 52.2131 38.6831C52.4019 38.3691 52.5011 38.0094 52.5 37.643ZM39.375 19.6875C39.375 21.3563 39.8699 22.9876 40.797 24.3751C41.7241 25.7626 43.0419 26.8441 44.5836 27.4827C46.1254 28.1213 47.8219 28.2884 49.4586 27.9629C51.0953 27.6373 52.5987 26.8337 53.7787 25.6537C54.9587 24.4737 55.7623 22.9703 56.0879 21.3336C56.4134 19.6968 56.2463 18.0003 55.6077 16.4586C54.9691 14.9168 53.8877 13.5991 52.5001 12.672C51.1126 11.7448 49.4813 11.25 47.8125 11.25C45.5747 11.25 43.4286 12.1389 41.8463 13.7213C40.264 15.3036 39.375 17.4497 39.375 19.6875Z"
+                                    fill="#44B8BA" />
                             </svg>
-
-                            <h2 class="hrk-subtitle">Хмм.. Щось пішло не так</h2>
+                            <p>Стабільні ціни, додаткові бонуси</p>
                         </div>
 
-                        <p>На жаль, не вдалося надіслати форму. Спробуйте ще раз</p>
+                        <div class="why-hrk__item why-hrk__item-2">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 5H20.23L14.985 20H5.95502L12.765 6.38C12.9728 5.96527 13.292 5.61654 13.6867 5.37282C14.0814 5.12911 14.5361 5.00002 15 5ZM6.13502 25L21.205 48.435L14.85 25H6.13502ZM20.03 25L27.68 53.225C27.8156 53.7369 28.1166 54.1895 28.5363 54.5125C28.9559 54.8354 29.4705 55.0105 30 55.0105C30.5295 55.0105 31.0442 54.8354 31.4638 54.5125C31.8834 54.1895 32.1844 53.7369 32.32 53.225L39.99 25H20.03ZM45.17 25L38.8 48.425L53.865 25H45.17ZM54.045 20H45.03L39.78 5H45C45.4648 4.99909 45.9206 5.12774 46.3162 5.37151C46.7119 5.61527 47.0318 5.96451 47.24 6.38L54.045 20ZM39.735 20H20.285L25.525 5H34.475L39.735 20Z"
+                                    fill="#44B8BA" />
+                            </svg>
+                            <p>Ексклюзивні умови співпраці</p>
+                        </div>
 
-                        <div class="hrk-popup__close-thanks"><button class="hrk__button">Спробувати ще раз</button>
+                        <div class="why-hrk__item why-hrk__item-3">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.49998 43.125V52.5H16.875L44.525 24.825L35.15 15.45L7.49998 43.125ZM56.525 45.9L45.9 56.525L32.9 43.525L37.325 39.1L39.825 41.6L46 35.4L49.55 38.95L45.9 42.5L48.55 45L52.1 41.5L56.525 45.9ZM16.525 27.075L3.47498 14.1L14.1 3.47498L18.5 7.89998L12.325 14.1L15 16.75L21.15 10.55L24.7 14.1L21.15 17.625L23.65 20.125L16.525 27.075ZM51.775 17.5C52.75 16.525 52.75 15 51.775 13.975L45.925 8.22498C45 7.24998 43.375 7.24998 42.4 8.22498L37.8 12.8L47.175 22.175L51.775 17.5Z"
+                                    fill="#44B8BA" />
+                            </svg>
+                            <p>Допомогу в проєктуванні об'єктів</p>
+                        </div>
+
+                        <div class="why-hrk__item why-hrk__item-4">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M55.875 13.75L45 24.5C45 24.5 41.75 24.5 38.5 21.25C35.25 18 35.25 14.75 35.25 14.75L46.125 3.87503C40 2.37503 32.625 4.37503 28.125 8.87503C21.375 15.625 27.375 24.25 25.625 26C16.125 35.875 6.37499 43.375 6.12499 43.75C3.24999 46.625 3.12499 51.25 5.87499 54C8.62499 56.75 13.25 56.625 16.125 53.75C16.5 53.375 24.5 43.25 33.875 33.875C35.625 32.125 43.875 38.5 50.875 31.625C55.25 27.125 57.375 19.875 55.875 13.75ZM11.75 51.375C9.99999 51.375 8.62499 50 8.62499 48.25C8.62499 46.375 9.99999 45 11.75 45C13.5 45 14.875 46.375 14.875 48.125C14.875 49.875 13.5 51.375 11.75 51.375Z"
+                                    fill="#44B8BA" />
+                            </svg>
+                            <p>Допомогу в розробці клієнтського поля у регіоні</p>
+                        </div>
+
+                        <div class="why-hrk__item why-hrk__item-5">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.37501 33.3125C3.66668 33.3125 3.07334 33.0733 2.59501 32.595C2.11668 32.1167 1.87668 31.5225 1.87501 30.8125C1.87334 30.1025 2.11334 29.5092 2.59501 29.0325C3.07668 28.5558 3.67001 28.3158 4.37501 28.3125H13.125C13.8333 28.3125 14.4275 28.5525 14.9075 29.0325C15.3875 29.5125 15.6267 30.1058 15.625 30.8125C15.6233 31.5192 15.3833 32.1133 14.905 32.595C14.4267 33.0767 13.8333 33.3158 13.125 33.3125H4.37501ZM17.5 50C15.4167 50 13.6458 49.2708 12.1875 47.8125C10.7292 46.3542 10 44.5833 10 42.5H6.87501C6.04168 42.5 5.37501 42.1875 4.87501 41.5625C4.37501 40.9375 4.22918 40.2292 4.43751 39.4375L5.00001 37.0625H12.8125C14.5625 37.0625 16.0417 36.4583 17.25 35.25C18.4583 34.0417 19.0625 32.5625 19.0625 30.8125C19.0625 30.2708 19 29.7708 18.875 29.3125C18.75 28.8542 18.5833 28.3958 18.375 27.9375H20.75C22.5 27.9375 23.9792 27.3333 25.1875 26.125C26.3958 24.9167 27 23.4375 27 21.6875C27 19.9375 26.3958 18.4583 25.1875 17.25C23.9792 16.0417 22.5 15.4375 20.75 15.4375H11.25L11.625 13.9375C11.875 12.7708 12.4483 11.8233 13.345 11.095C14.2417 10.3667 15.2933 10.0017 16.5 10H41.875C42.7083 10 43.375 10.3125 43.875 10.9375C44.375 11.5625 44.5208 12.2708 44.3125 13.0625L42.6875 20H47.5C48.2917 20 49.0417 20.1775 49.75 20.5325C50.4583 20.8875 51.0417 21.3767 51.5 22L56.1875 28.1875C56.6458 28.7708 56.9375 29.4067 57.0625 30.095C57.1875 30.7833 57.1875 31.4808 57.0625 32.1875L55.375 40.5C55.25 41.0833 54.9583 41.5625 54.5 41.9375C54.0417 42.3125 53.5208 42.5 52.9375 42.5H50C50 44.5833 49.2708 46.3542 47.8125 47.8125C46.3542 49.2708 44.5833 50 42.5 50C40.4167 50 38.6458 49.2708 37.1875 47.8125C35.7292 46.3542 35 44.5833 35 42.5H25C25 44.5833 24.2708 46.3542 22.8125 47.8125C21.3542 49.2708 19.5833 50 17.5 50ZM9.37501 24.1875C8.66668 24.1875 8.07334 23.9475 7.59501 23.4675C7.11668 22.9875 6.87668 22.3942 6.87501 21.6875C6.87334 20.9808 7.11334 20.3875 7.59501 19.9075C8.07668 19.4275 8.67001 19.1875 9.37501 19.1875H20.625C21.3333 19.1875 21.9275 19.4275 22.4075 19.9075C22.8875 20.3875 23.1267 20.9808 23.125 21.6875C23.1233 22.3942 22.8833 22.9883 22.405 23.47C21.9267 23.9517 21.3333 24.1908 20.625 24.1875H9.37501ZM17.5 45C18.2083 45 18.8025 44.76 19.2825 44.28C19.7625 43.8 20.0017 43.2067 20 42.5C19.9983 41.7933 19.7583 41.2 19.28 40.72C18.8017 40.24 18.2083 40 17.5 40C16.7917 40 16.1983 40.24 15.72 40.72C15.2417 41.2 15.0017 41.7933 15 42.5C14.9983 43.2067 15.2383 43.8008 15.72 44.2825C16.2017 44.7642 16.795 45.0033 17.5 45ZM42.5 45C43.2083 45 43.8025 44.76 44.2825 44.28C44.7625 43.8 45.0017 43.2067 45 42.5C44.9983 41.7933 44.7583 41.2 44.28 40.72C43.8017 40.24 43.2083 40 42.5 40C41.7917 40 41.1983 40.24 40.72 40.72C40.2417 41.2 40.0017 41.7933 40 42.5C39.9983 43.2067 40.2383 43.8008 40.72 44.2825C41.2017 44.7642 41.795 45.0033 42.5 45ZM39.8125 32.5H51.875L52.125 31.1875L47.5 25H41.5625L39.8125 32.5Z"
+                                    fill="#44B8BA" />
+                            </svg>
+                            <p>Швидку доставку як зі складу, так і з-за кордону</p>
+                        </div>
+
+                        <div class="why-hrk__item why-hrk__item-6">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_459_323)">
+                                    <path
+                                        d="M16.6667 16.6667C17.1087 16.6667 17.5326 16.4911 17.8452 16.1786C18.1577 15.866 18.3333 15.4421 18.3333 15V5.00004C18.3333 4.55801 18.1577 4.13409 17.8452 3.82153C17.5326 3.50897 17.1087 3.33337 16.6667 3.33337C16.2246 3.33337 15.8007 3.50897 15.4882 3.82153C15.1756 4.13409 15 4.55801 15 5.00004V15C15 15.4421 15.1756 15.866 15.4882 16.1786C15.8007 16.4911 16.2246 16.6667 16.6667 16.6667Z"
+                                        fill="#44B8BA" />
+                                    <path
+                                        d="M43.3334 16.6667C43.7754 16.6667 44.1993 16.4911 44.5119 16.1786C44.8244 15.866 45 15.4421 45 15V5.00004C45 4.55801 44.8244 4.13409 44.5119 3.82153C44.1993 3.50897 43.7754 3.33337 43.3334 3.33337C42.8913 3.33337 42.4674 3.50897 42.1548 3.82153C41.8423 4.13409 41.6667 4.55801 41.6667 5.00004V15C41.6667 15.4421 41.8423 15.866 42.1548 16.1786C42.4674 16.4911 42.8913 16.6667 43.3334 16.6667Z"
+                                        fill="#44B8BA" />
+                                    <path
+                                        d="M53.75 9.99995H47.0833V14.9999C47.0833 15.9724 46.697 16.905 46.0094 17.5927C45.3217 18.2803 44.3891 18.6666 43.4166 18.6666C42.4442 18.6666 41.5116 18.2803 40.8239 17.5927C40.1363 16.905 39.75 15.9724 39.75 14.9999V9.99995H20.3333V14.9999C20.3333 15.9724 19.947 16.905 19.2594 17.5927C18.5717 18.2803 17.6391 18.6666 16.6666 18.6666C15.6942 18.6666 14.7616 18.2803 14.0739 17.5927C13.3863 16.905 13 15.9724 13 14.9999V9.99995H6.33331C5.93669 9.99543 5.54318 10.0705 5.17607 10.2207C4.80896 10.3709 4.4757 10.5932 4.196 10.8745C3.9163 11.1557 3.69585 11.4902 3.54767 11.8582C3.39949 12.2261 3.3266 12.62 3.33331 13.0166V50.3166C3.32669 50.7062 3.39689 51.0933 3.53989 51.4558C3.68289 51.8182 3.8959 52.149 4.16675 52.4291C4.4376 52.7093 4.76098 52.9333 5.11843 53.0884C5.47587 53.2436 5.86038 53.3268 6.24998 53.3333H53.75C54.1396 53.3268 54.5241 53.2436 54.8815 53.0884C55.239 52.9333 55.5624 52.7093 55.8332 52.4291C56.1041 52.149 56.3171 51.8182 56.4601 51.4558C56.6031 51.0933 56.6733 50.7062 56.6666 50.3166V13.0166C56.6733 12.627 56.6031 12.2399 56.4601 11.8775C56.3171 11.515 56.1041 11.1842 55.8332 10.9041C55.5624 10.624 55.239 10.3999 54.8815 10.2448C54.5241 10.0897 54.1396 10.0065 53.75 9.99995ZM43.2333 27.6333L27.1166 43.7499L18.3333 34.8999C17.9442 34.472 17.7334 33.9114 17.7441 33.3331C17.7549 32.7547 17.9863 32.2024 18.391 31.7891C18.7958 31.3759 19.3432 31.133 19.9212 31.1102C20.4992 31.0874 21.064 31.2865 21.5 31.6666L27.1333 37.2999L40 24.4333C40.2112 24.2221 40.4619 24.0545 40.7379 23.9402C41.0138 23.8259 41.3096 23.7671 41.6083 23.7671C41.907 23.7671 42.2028 23.8259 42.4787 23.9402C42.7547 24.0545 43.0054 24.2221 43.2166 24.4333C43.4279 24.6445 43.5954 24.8952 43.7097 25.1712C43.824 25.4471 43.8828 25.7429 43.8828 26.0416C43.8828 26.3403 43.824 26.6361 43.7097 26.912C43.5954 27.188 43.4279 27.4387 43.2166 27.6499L43.2333 27.6333Z"
+                                        fill="#44B8BA" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_459_323">
+                                        <rect width="60" height="60" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>Cпільні маркетингові заходи та підтримку</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Steps -->
+
+            <div class="steps-hrk container-hrk">
+                <h2 class="hrk-subtitle margin_32">Як стати партнером?</h2>
+                <div class="steps-hrk__wrapper">
+                    <div class="steps-hrk__item steps-hrk__item-1">
+                        <p class="steps-hrk__nuw hrk-blue-text">1</p>
+                        <h3 class="steps-hrk__subtitle">Крок</h3>
+                        <p>Заповніть форму нижче або зв'яжіться з нашими менеджерами за контактами, вказаними на сайті
+                        </p>
+                        <img class="steps-hrk__arrow steps-hrk__arrow-1" src="/content/uploads/images/step_arrow_1.svg" alt="arrow"
+                            width="218" height="90">
+                    </div>
+
+                    <div class="steps-hrk__item steps-hrk__item-2">
+                        <p class="steps-hrk__nuw hrk-blue-text">2</p>
+                        <h3 class="steps-hrk__subtitle">Крок</h3>
+                        <p>Узгодьте умови співпраці та підпишіть договір</p>
+                        <img class="steps-hrk__arrow steps-hrk__arrow-2" src="/content/uploads/images/step_arrow_2.svg" alt="arrow"
+                            width="218" height="90">
+                    </div>
+
+                    <div class="steps-hrk__item steps-hrk__item-3">
+                        <p class="steps-hrk__nuw hrk-blue-text">3</p>
+                        <h3 class="steps-hrk__subtitle">Крок</h3>
+                        <p>Отримайте доступ до прайс-листів та почніть продавати</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contacts block -->
+            <div class="text-block-hrk container-hrk">
+                <h2 class="hrk-subtitle margin_32">Зв’яжіться з нами:</h2>
+
+                <div class="contact-us-hrk__block">
+
+                    <div class="contact-us-hrk__item">
+                        <img src="/content/uploads/images/ic_phone.png" alt="icon" width="24" height="24">
+                        <h3 class="contact-us-hrk__subtitle">Телефон</h3>
+                        <a href="tel:+380668824688" class="contact-us-hrk__link"> +38 066 88 24 688</a>
+                    </div>
+
+                    <div class="contact-us-hrk__item">
+                        <img src="/content/uploads/images/ic_email.png" alt="icon" width="24" height="24">
+                        <h3 class="contact-us-hrk__subtitle">E-mail</h3>
+                        <a href="mailto:info@hurakan.ua" class="contact-us-hrk__link">info@hurakan.ua </a>
+                    </div>
+
+                    <div class="contact-us-hrk__item">
+                        <img src="/content/uploads/images/ic_clock.png" alt="icon" width="24" height="24">
+                        <h3 class="contact-us-hrk__subtitle">Графік роботи</h3>
+                        <div class="hrk__col">
+                            <p>Пн-Пт: 9:00-18:00;</p>
+                            <p>Сб-Нд: вихідні</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text block -->
+            <div class="text-block-hrk text-block-hrk_2 container-hrk">
+                <div class="row-hrk">
+                    <div class="col-hrk">
+                        <h2 class="hrk-subtitle margin_32">Про наш продукт</h2>
+                        <p>Hurakan — це широкий асортимент <b>професійного обладнання</b> для барів, пабів, кафе,
+                            кав’ярень, ресторанів,
+                            фастфудів та стритфудів, кейтерингів, їдалень, піцерій, суші-барів, лаундж-закладів,
+                            delivery-сервісів, dark
+                            kitchen, відділів кулінарії у магазинах, невеликих кондитерських та пекарень, виробництв
+                            напівфабрикатів, малих
+                            цехів харчової промисловості, буфетів, шведських ліній у готелях, фудкортів, фудтраків,
+                            фермерських магазинів,
+                            кулінарних шкіл та АЗС.</p>
+                    </div>
+                    <div class="col-hrk col-hrk__img">
+                        <img src="/content/uploads/images/hrk_box_img.png" alt="box" width="420" height="280">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form block -->
+            <div class="form-block-hrk">
+                <div class="form-block-hrk__wrapper container-hrk">
+                    <h2 class="hrk-subtitle">
+                        <span>Хочете стати дилером Hurakan? </span>
+                        <span>Продавати і заробляти вже завтра?</span>
+                    </h2>
+                    <p class="hrk-blue-text margin_32">Заповніть коротку анкету і ми зв’яжемось з вами для обговорення
+                        умов співпраці.</p>
+
+                    <form action="" class="hrk-form form_send_partner">
+                        <div class="hrk-form__block margin_32">
+                            <div class="hrk-form__inputs">
+                                <input class="input_full" name="company_name"
+                                    placeholder="Назва компанії (Вкажіть повну назву вашої юридичної особи або ФОП)"
+                                    type="text" />                               
+                            </div>
+                            <div class="hrk-form__inputs">
+                              
+                                <input class="input_350" name="partner_name" placeholder="ПІБ контактної особи" type="text" />
+                                <input class="input_350" name="partner_phone" type="tel" value="+ 380" />
+                                <input class="input_350" name="partner_email" placeholder="E-mail" type="email" />
+
+                            </div>
+                            <div class="hrk-form__inputs">
+
+                                <select class="input_350" name="partner_region">
+                                    <option disabled="disabled" selected="selected" value="def">Область</option>
+                                    <option value="vinnitska">Вінницька</option>
+                                    <option value="volynska">Волинська</option>
+                                    <option value="dnipropetrovska">Дніпропетровська</option>
+                                    <option value="donetska">Донецька</option>
+                                    <option value="zhytomyrska">Житомирська</option>
+                                    <option value="zakarpatska">Закарпатська</option>
+                                    <option value="zaporizka">Запорізька</option>
+                                    <option value="ivano-frankivska">Івано-Франківська</option>
+                                    <option value="kyivska">Київська</option>
+                                    <option value="kirovohradska">Кіровоградська</option>
+                                    <option value="luhanska">Луганська</option>
+                                    <option value="lvivska">Львівська</option>
+                                    <option value="mykolaivska">Миколаївська</option>
+                                    <option value="odeska">Одеська</option>
+                                    <option value="poltavska">Полтавська</option>
+                                    <option value="rivnenska">Рівненська</option>
+                                    <option value="sumska">Сумська</option>
+                                    <option value="ternopilska">Тернопільська</option>
+                                    <option value="kharkivska">Харківська</option>
+                                    <option value="khersonska">Херсонська</option>
+                                    <option value="khmelnytska">Хмельницька</option>
+                                    <option value="cherkaska">Черкаська</option>
+                                    <option value="chernivetska">Чернівецька</option>
+                                    <option value="chernihivska">Чернігівська</option>
+                                </select>
+                                <input class="input_350" name="partner_city" placeholder="Населений пункт" type="text" />
+                               
+                            </div>
+                            <div class="hrk-form__inputs">
+
+                                <input class="input_450" name="partner_social"
+                                    placeholder="Посилання на ваш сайт / соцмережі (за наявності)" type="text" />
+                                <textarea id="" name="partner_comment" rows="1" style="height: auto;resize: none;"
+                                    placeholder="Додати коментар"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="hrk-form__block margin_32">
+                            <p>Надсилаючи заявку, ви погоджуєтеся з умовами оферти. Оферта не вимагає підпису і має
+                                юридичну силу (згідно з
+                                Цивільним кодексом України).
+                                Індивідуальні умови співпраці будуть узгоджені окремо.</p>
+                        </div>
+                        <button class="hrk__button open-popup_hrk">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Download files -->
+
+            <div class="hrk-download container-hrk">
+                <div class="hrk-download__list margin_32">
+                    <div class="hrk-download__item">
+                        <h2 class="hrk-download__title">Договір-оферти (PDF)</h2>
+                        <a class="hrk__button hrk-download__btn" href="" target="_blank"><svg fill="none"
+                                height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15.2379V3.21289" stroke="white" stroke-linecap="round"
+                                    stroke-miterlimit="10" stroke-width="1.5"></path>
+                                <path
+                                    d="M7.375 10.9939L11.341 14.9599C11.5164 15.1335 11.7532 15.2308 12 15.2308C12.2468 15.2308 12.4836 15.1335 12.659 14.9599L16.625 10.9939"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                </path>
+                                <path
+                                    d="M2.75 13.8499V18.4749C2.75 19.0883 2.99369 19.6766 3.42746 20.1104C3.86123 20.5442 4.44955 20.7879 5.063 20.7879H18.937C19.5504 20.7879 20.1388 20.5442 20.5725 20.1104C21.0063 19.6766 21.25 19.0883 21.25 18.4749V13.8499"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                </path>
+                            </svg> <span>Завантажити</span> </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thanks popup -->
+            <div class="hrk-popup-thanks success">
+                <div class="hrk-popup-dialog">
+                    <div class="hrk-popup-content">
+                        <div class="hrk-popup-body">
+                            <div class="hrk-popup__title">
+                                <svg width="60" height="55" viewBox="0 0 60 55" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 35.933L24.5816 42L47 12" stroke="#28C20C" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <h2 class="hrk-subtitle">Дякуємо!</h2>
+                            </div>
+                            <p>Ваші дані успішно надіслані. Ми звʼяжемось з вами найближчим часом</p>
+                            <div class="hrk-popup__close-thanks">
+                                <button class="hrk__button">Готово</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hrk-popup-thanks error">
+                <div class="hrk-popup-dialog">
+                    <div class="hrk-popup-content">
+                        <div class="hrk-popup-body">
+                            <div class="hrk-popup__title">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M30 31.7701L16.885 44.8851C16.6517 45.1184 16.365 45.2434 16.025 45.2601C15.685 45.2768 15.3817 45.1518 15.115 44.8851C14.8483 44.6184 14.715 44.3234 14.715 44.0001C14.715 43.6768 14.8483 43.3818 15.115 43.1151L28.23 30.0001L15.115 16.8851C14.8817 16.6518 14.7567 16.3651 14.74 16.0251C14.7233 15.6851 14.8483 15.3818 15.115 15.1151C15.3817 14.8484 15.6767 14.7151 16 14.7151C16.3233 14.7151 16.6183 14.8484 16.885 15.1151L30 28.2301L43.115 15.1151C43.3483 14.8818 43.6358 14.7568 43.9775 14.7401C44.3158 14.7234 44.6183 14.8484 44.885 15.1151C45.1517 15.3818 45.285 15.6768 45.285 16.0001C45.285 16.3234 45.1517 16.6184 44.885 16.8851L31.77 30.0001L44.885 43.1151C45.1183 43.3484 45.2433 43.6359 45.26 43.9776C45.2767 44.3159 45.1517 44.6184 44.885 44.8851C44.6183 45.1518 44.3233 45.2851 44 45.2851C43.6767 45.2851 43.3817 45.1518 43.115 44.8851L30 31.7701Z"
+                                        fill="#E00004" />
+                                </svg>
+                                <h2 class="hrk-subtitle">Хмм.. Щось пішло не так</h2>
+                            </div>
+                            <p>На жаль, не вдалося надіслати форму. Спробуйте ще раз</p>
+                            <div class="hrk-popup__close-thanks">
+                                <button class="hrk__button">Спробувати ще раз</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
 </main>
 <script>
 
