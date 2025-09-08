@@ -184,14 +184,13 @@ button.hrk__button:hover {
 
 .banner_2-hrk {
     position: relative;
-    padding: 0 15px;
     color: var(--white);
     background: #1C8C96;
 }
 
 .banner_2-hrk__wrapper {
     display: grid;
-    grid-template-columns: 80% 1fr;
+    grid-template-columns: 78% 1fr;
     align-items: center;
 }
 
@@ -219,7 +218,7 @@ button.hrk__button:hover {
     object-fit: cover;
     height: 100%;
     width: auto;
-    max-width: 30%;
+    max-width: 48%;
 }
 
 @media (max-width: 992px) {
@@ -228,22 +227,27 @@ button.hrk__button:hover {
         grid-template-columns: 1fr;
     }
 
+    .banner_2_1-hrk__wrapper {
+        padding: 0;
+    }
+
     .banner_2-hrk__content {
-        padding: 150px 0 40px;
-        padding-right: 8px;
+        padding: 150px 20px 40px;
     }
 
     .banner_2-hrk__img {
+        width: 100%;
         max-width: none;
-        height: 120px;
-        inset: 0 0 auto auto;
+        height: auto;
+        position: static;
+        /* inset: 0 0 auto auto; */
     }
 }
 
 .partner_banner_2-hrk .banner_2-hrk__wrapper {
     grid-template-columns: 1fr;
     align-items: flex-start;
-    padding: 96px 0;
+    padding: 96px 20px;
 }
 
 .partner_banner_2-hrk .why-hrk__items {
