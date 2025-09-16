@@ -144,14 +144,18 @@ button.hrk__button:hover {
 }
 
 .why-hrk__items {
-    display: flex;
-    justify-content: stretch;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.we-offer-hrk .why-hrk__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 24px;
 }
 
 .why-hrk__item {
-    max-width: 49%;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -166,16 +170,11 @@ button.hrk__button:hover {
     color: #ffffff;
 }
 
-@media (max-width: 1220px) {
-    .why-hrk__items {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-
-    .why-hrk__item {
-        max-width: none;
-        width: auto;
-    }
+.we-offer-hrk .why-hrk__item h4 {
+    font-weight: 700;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    margin: 0 !important;
 }
 
 .banner_2-hrk {
@@ -429,7 +428,6 @@ button.hrk__button:hover {
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid-column;
-    white-space: nowrap;
     font-size: 14px !important;
     line-height: 100%;
     padding-top: 16px;
@@ -441,21 +439,24 @@ button.hrk__button:hover {
 }
 
 .checkbox-hrk, .checkbox-hrk-label {
+    position: relative;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
+    padding-left: 33px;
 }
 
 .checkbox-hrk + .checkbox-hrk-label:before {
     content: '';
+    position: absolute;
+    left: 0;
+    top: 1px;
     background: #fff;
     border-radius: 4px;
     display: inline-block;
     vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    padding: 2px;
-    margin-right: 16px;
+    width: 17px;
+    height: 17px;
     text-align: center;
     box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004D;
 }
@@ -558,8 +559,9 @@ button.hrk__button:hover {
         padding: 48px 15px;
     }
 
-    .home_banner_2-hrk .why-hrk__items {
-        gap: 16px;
+    .home_banner_2-hrk .why-hrk__item {
+        max-width: 225px;
+        margin: 0 auto;
     }
 
     .contact-us-hrk__block {
@@ -577,10 +579,6 @@ button.hrk__button:hover {
     }
 
     .contacts-list-hrk {
-        margin-bottom: 88px;
-    }
-
-    .form-block-hrk {
         margin-bottom: 88px;
     }
 
