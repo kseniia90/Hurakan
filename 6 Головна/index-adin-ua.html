@@ -8,7 +8,8 @@
     .main-h,
     .heading.heading--xl,
     .benefits,
-    .frontInfo-about .frontInfo-content .h2 {
+    .frontInfo-about .frontInfo-content .h2,
+    .about__wrap .heading--l {
         display: none;
     }
 
@@ -19,7 +20,7 @@
     @media (max-width: 768px) {
         .frontInfo {
             margin: 0 0 88px;
-        } 
+        }
     }
 
     .header {
@@ -46,6 +47,7 @@
     }
 
     .wrapper-hrk {
+        margin: 0 -16px;
         padding: 0;
         overflow: hidden;
         scroll-behavior: smooth !important;
@@ -54,7 +56,7 @@
     .container-hrk {
         min-height: 100%;
         max-width: 1230px;
-        padding: 0 15px;
+        padding: 0 16px;
         margin: 0 auto;
         width: 100%;
         font-family: "Montserrat", sans-serif;
@@ -558,6 +560,11 @@
             gap: 16px;
         }
 
+        .we-offer-hrk .why-hrk__items {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
         .text-block-hrk_2 {
             padding-top: 0;
         }
@@ -650,7 +657,7 @@
         }
 
         .form-block-hrk .hrk-form .hrk__button {
-            align-self: center;
+            /* align-self: center; */
         }
 
         .hrk-rules__wrapper {
@@ -660,6 +667,11 @@
 
         .upload-content {
             margin: 0 auto;
+        }
+
+        .banner_2-hrk,
+        .form-block-hrk {
+            border-radius: 0;
         }
     }
 
